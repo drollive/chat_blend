@@ -54,6 +54,7 @@ $route['default_controller'] = 'home';
 
 
 $route['signup']  = 'auth/signup';
+$route['signin']  = 'auth/signin';
 
 
 

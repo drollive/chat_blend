@@ -1,4 +1,3 @@
-  <!-- JAVASCRIPT -->
   <script src="<?php echo base_url('public/assets') ?>/libs/bootstrap/js/bootstrap.bundle.min.js"></script>
   <script src="<?php echo base_url('public/assets') ?>/libs/simplebar/simplebar.min.js"></script>
   <script src="<?php echo base_url('public/assets') ?>/libs/node-waves/waves.min.js"></script>
@@ -6,6 +5,9 @@
   <script src="<?php echo base_url('public/assets') ?>/js/pages/plugins/lord-icon-2.1.0.js"></script>
   <script src="<?= base_url('public/assets') ?>/libs/swiper/swiper-bundle.min.js"></script>
   <script src="<?= base_url('public/assets') ?>/js/pages/swiper.js"></script>
+  <script src="<?= base_url('public/assets') ?>/libs/particles.js/particles.js"></script>
+  <script src="<?= base_url('public/assets') ?>/js/pages/particles.app.js"></script>
+  <script src="<?= base_url('public/assets') ?>/js/pages/form-validation.init.js"></script>
   <script src="<?= base_url('public/assets') ?>/libs/moment/min/moment.min.js"></script>
 
   </body>

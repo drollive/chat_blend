@@ -9,7 +9,7 @@ class Auth extends CI_Controller
         $this->load->view('partials/title-meta');
         $this->load->view('partials/head-css');
         $this->load->view('access/signin');
-        $this->load->view('partials/vendor-scripts');
+        $this->load->view('access/scripts/signin-scripts');
     }
 
     public function signup()
@@ -19,9 +19,6 @@ class Auth extends CI_Controller
         $this->load->view('partials/head-css');
         $this->load->view('access/signup');
         $this->load->view('partials/vendor-scripts');
+        $this->load->view('access/scripts/signup-scripts');
     }
-
-
-
-
 }

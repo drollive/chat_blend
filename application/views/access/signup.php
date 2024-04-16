@@ -18,7 +18,7 @@
                     <div class="col-lg-12">
                         <div class="text-center mt-sm-5 mb-4 text-white-50">
                             <div>
-                                <a href="/" class="d-inline-block auth-logo">
+                                <a href="<?= base_url() ?>" class="d-inline-block auth-logo">
                                     <h1 class="display-7 fw-medium mb-4 lh-base text-white"><img src="<?php echo base_url('public/assets') ?>/images/svg/blender.svg" alt="" width="40px" height="30px">Chat<span>Blend</span></h1>
                                 </a>
                             </div>
@@ -38,30 +38,33 @@
                                 <div class="p-2 mt-4">
                                     <form class="needs-validation" novalidate action="/">
                                         <div class="mb-3">
-                                            <label for="first_name" class="form-label">First Name <span class="text-danger">*</span></label>
-                                            <input type="text" class="form-control" id="first_name" name="first_name" placeholder="Enter First Name" required>
+                                            <label for="first_name" class="form-label">Full Name <span class="text-danger">*</span></label>
+                                            <input type="text" class="form-control" id="first_name" name="first_name" placeholder="Enter Full Name" required>
                                             <div class="invalid-feedback">
-                                                Please enter First Name
+                                                Please enter Full Name
                                             </div>
                                         </div>
                                         <div class="mb-3">
-                                            <label for="phone_number" class="form-label">Phone Number <span class="text-danger">*</span></label>
-                                            <input type="text" class="form-control" id="phone_number" name="phone_number" required pattern="^(09|\+639)\d{9}$" placeholder="####-###-####">
+                                            <label for="email_address" class="form-label">Email Address <span class="text-danger">*</span></label>
+                                            <input type="text" class="form-control" id="phone_number" name="email_address" required pattern="^(09|\+639)\d{9}$" placeholder="Enter your Email address">
                                             <div class="invalid-feedback">
                                                 Please enter a valid Phone Number
                                             </div>
                                         </div>
                                         <div class="mb-3">
                                             <div class="col-lg-12">
-                                                <label for="gender" class="form-label">Gender <span class="text-danger">*</span></label>
+                                                <label for="gender" class="form-label">Language <span class="text-danger">*</span></label>
                                                 <select class="form-select js-example-basic-single" id="gender" name="gender" data-choices data-choices-search-false required>
-                                                    <option value="" selected disabled>Select Gender</option>
-                                                    <option value="Male">Male</option>
-                                                    <option value="Female">Female</option>
+                                                    <option value="" selected disabled>Select your language</option>
+                                                    <option value="">English</option>
+                                                    <option value="">Chinese(Traditional)</option>
+                                                    <option value="">Italian</option>
+                                                    <option value="">Spanish</option>
+                                                    <option value="">Filipino</option>
                                                     <option value="Others">Others</option>
                                                 </select>
                                                 <div class="invalid-feedback">
-                                                    Please select Gender
+                                                    Please select your language
                                                 </div>
                                             </div>
                                         </div>
@@ -69,6 +72,14 @@
                                             <label class="form-label" for="password">Password <span class="text-danger">*</span></label>
                                             <div class="position-relative auth-pass-inputgroup mb-3">
                                                 <input type="password" class="form-control pe-5" placeholder="Enter Password" id="password" name="password" required>
+                                                <button class="btn btn-link position-absolute end-0 top-0 text-decoration-none text-muted shadow-none" type="button" id="password-addon"><i class="bi bi-eye-slash" id="togglePassword"></i></button>
+                                                <div class="invalid-feedback">
+                                                    Please create a Password
+                                                </div>
+                                            </div>
+                                            <label class="form-label" for="password">Confirm Password <span class="text-danger">*</span></label>
+                                            <div class="position-relative auth-pass-inputgroup mb-3">
+                                                <input type="password" class="form-control pe-5" placeholder="Confirm Password" id="password" name="password" required>
                                                 <button class="btn btn-link position-absolute end-0 top-0 text-decoration-none text-muted shadow-none" type="button" id="password-addon"><i class="bi bi-eye-slash" id="togglePassword"></i></button>
                                                 <div class="invalid-feedback">
                                                     Please create a Password
@@ -105,17 +116,13 @@
                                             </div>
                                         </div>
                                     </form>
-
                                 </div>
+                            </div>
+                            <div class="mt-5 text-center" id="acc">
+                                <p class="mb-0">Already have an account ? <a href="<?php echo base_url() ?>signin" class="fw-bold text-primary text-decoration-underline"> Signin </a> </p>
                             </div>
                             <!-- end card body -->
                         </div>
-                        <!-- end card -->
-
-                        <div class="mt-4 text-center" id="acc">
-                            <p class="mb-0">Already have an account ? <a href="auth-signin-basic" class="fw-bold text-primary text-decoration-underline"> Signin </a> </p>
-                        </div>
-
                     </div>
                 </div>
                 <!-- end row -->
@@ -123,7 +130,6 @@
             <!-- end container -->
         </div>
         <!-- end auth page content -->
-
         <!-- footer -->
         <footer class="footer">
             <div class="container">
