@@ -1,0 +1,32 @@
+.row{
+    position: relative;
+    bottom:10px;
+
+    img{
+        position: relative;
+        bottom: 4px;
+    }
+    span{
+        color: rgb(13, 188, 109);
+    }
+}
+
+.auth-one-bg{
+    background-color: rgb(8, 124, 23);
+
+    
+}
+
+.auth-page-content{
+
+    .card{
+        position: relative;
+        bottom: 50px;
+        height: 660px;
+    }
+    
+    #acc{
+        position: relative;
+        bottom: 50px;
+    }
+}
