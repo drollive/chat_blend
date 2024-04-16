@@ -34,10 +34,6 @@
 
 <link rel="stylesheet" href="https://cdn.datatables.net/buttons/2.2.2/css/buttons.dataTables.min.css">
 
-<!-- Owl Carousel -->
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.css">
-
 <!-- Layout config Js -->
 <script src="<?php echo base_url('public/assets') ?>/js/layout.js"></script>
 
@@ -60,8 +56,7 @@
 
 <!-- App Css-->
 <!-- <link href="<?php echo base_url('public/assets') ?>/css/app.min.css" rel="stylesheet" type="text/css" /> -->
-<!-- custom Css-->
-<link href="<?php echo base_url('public/assets') ?>/css/custom.css" rel="stylesheet" type="text/css" />
+
 
 <link href="<?php echo base_url('public/assets') ?>/css/main.css" rel="stylesheet" type="text/css" />
 <!-- landing Css-->

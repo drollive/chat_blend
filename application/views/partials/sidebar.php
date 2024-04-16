@@ -909,4 +909,4 @@
 </div>
 <!-- Left Sidebar End -->
 <!-- Vertical Overlay-->
-<div class="vertical-overlay"></div>
+<div class="horizontal-overlay"></div>

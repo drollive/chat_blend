@@ -8,6 +8,11 @@
   <script src="<?= base_url('public/assets') ?>/js/pages/swiper.js"></script>
   <script src="<?= base_url('public/assets') ?>/libs/moment/min/moment.min.js"></script>
 
+  <script src="<?php echo base_url('public/assets') ?>/js/layout.js"></script>
+  <script src="<?php echo base_url('public/assets') ?>/js/app.js"></script>
+
+
+
   </body>
 
   </html>
