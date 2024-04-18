@@ -11,8 +11,6 @@
   <script src="<?php echo base_url('public/assets') ?>/js/layout.js"></script>
   <script src="<?php echo base_url('public/assets') ?>/js/app.js"></script>
 
-
-
   </body>
 
   </html>

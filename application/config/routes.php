@@ -57,6 +57,7 @@ $route['signup']  = 'auths/signup';
 $route['signin']  = 'auths/signin';
 
 $route['home']    = 'users/home';
+$route['chats']    = 'users/chats';
 
 
 $route['404_override'] = '';

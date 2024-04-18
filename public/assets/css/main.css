@@ -15539,3 +15539,7 @@ span.flatpickr-weekday {
 #explorecard-list .list-element:nth-child(-n+10) {
   display: block;
 }
+
+#logo-1{
+    color: rgb(13, 188, 109);
+}
