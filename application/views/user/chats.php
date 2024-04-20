@@ -6,7 +6,7 @@
         <div class="main-content">
 
             <div class="page-content">
-                <div class="container-fluid">
+                <div class="container-fluid mt-4 mb-4">
                     <div class="chat-wrapper d-lg-flex gap-1 mx-n4 mt-n4 p-1">
                         <div class="chat-leftsidebar">
                             <div class="px-4 pt-4 mb-4">
@@ -16,7 +16,6 @@
                                     </div>
                                     <div class="flex-shrink-0">
                                         <div data-bs-toggle="tooltip" data-bs-trigger="hover" data-bs-placement="bottom" title="Add Contact">
-
                                             <!-- Button trigger modal -->
                                             <button type="button" class="btn btn-soft-success btn-sm">
                                                 <i class="ri-add-line align-bottom"></i>
@@ -28,40 +27,30 @@
                                     <input type="text" class="form-control bg-light border-light" placeholder="Search here...">
                                     <i class="ri-search-2-line search-icon"></i>
                                 </div>
-
                             </div> <!-- .p-4 -->
-
                             <div class="chat-room-list" data-simplebar>
-
                                 <div class="d-flex align-items-center px-4 mb-2">
                                     <div class="flex-grow-1">
                                         <h4 class="mb-0 fs-12 text-muted text-uppercase">Direct Messages</h4>
                                     </div>
                                     <div class="flex-shrink-0">
                                         <div data-bs-toggle="tooltip" data-bs-trigger="hover" data-bs-placement="bottom" title="New Message">
-
-                                            <!-- Button trigger modal -->
-                                            <button type="button" class="btn btn-soft-success btn-sm">
-                                                <i class="ri-add-line align-bottom"></i>
-                                            </button>
                                         </div>
                                     </div>
                                 </div>
-
                                 <div class="chat-message-list">
-
                                     <ul class="list-unstyled chat-list chat-user-list" id="userList">
                                         <li class="active">
                                             <a href="javascript: void(0);">
                                                 <div class="d-flex align-items-center">
                                                     <div class="flex-shrink-0 chat-user-img online align-self-center me-2 ms-0">
                                                         <div class="avatar-xxs">
-                                                            <img src="/assets/images/users/avatar-2.jpg" class="rounded-circle img-fluid userprofile" alt="">
+                                                            <img src="<?php echo base_url('public/assets') ?>/images/people/Johanna.jpg" class="rounded-circle img-fluid userprofile" alt="">
                                                         </div>
                                                         <span class="user-status"></span>
                                                     </div>
                                                     <div class="flex-grow-1 overflow-hidden">
-                                                        <p class="text-truncate mb-0">Lisa Parker</p>
+                                                        <p class="text-truncate mb-0">Johanna Marie Quitoviera</p>
                                                     </div>
                                                 </div>
                                             </a>
@@ -71,12 +60,12 @@
                                                 <div class="d-flex align-items-center">
                                                     <div class="flex-shrink-0 chat-user-img online align-self-center me-2 ms-0">
                                                         <div class="avatar-xxs">
-                                                            <img src="/assets/images/users/avatar-3.jpg" class="rounded-circle img-fluid userprofile" alt="">
+                                                            <img src="<?php echo base_url('public/assets') ?>/images/people/Josiah.jpg" class="rounded-circle img-fluid userprofile" alt="">
                                                         </div>
                                                         <span class="user-status"></span>
                                                     </div>
                                                     <div class="flex-grow-1 overflow-hidden">
-                                                        <p class="text-truncate mb-0">Frank Thomas</p>
+                                                        <p class="text-truncate mb-0">Josiah Ariston</p>
                                                     </div>
                                                     <div class="flex-shrink-0">
                                                         <span class="badge badge-soft-dark rounded p-1">8</span>
@@ -87,31 +76,14 @@
                                         <li>
                                             <a href="javascript: void(0);">
                                                 <div class="d-flex align-items-center">
-                                                    <div class="flex-shrink-0 chat-user-img away align-self-center me-2 ms-0">
-                                                        <div class="avatar-xxs">
-                                                            <div class="avatar-title rounded-circle bg-danger userprofile">
-                                                                C
-                                                            </div>
-                                                        </div>
-                                                        <span class="user-status"></span>
-                                                    </div>
-                                                    <div class="flex-grow-1 overflow-hidden">
-                                                        <p class="text-truncate mb-0">Clifford Taylor</p>
-                                                    </div>
-                                                </div>
-                                            </a>
-                                        </li>
-                                        <li>
-                                            <a href="javascript: void(0);">
-                                                <div class="d-flex align-items-center">
                                                     <div class="flex-shrink-0 chat-user-img online align-self-center me-2 ms-0">
                                                         <div class="avatar-xxs">
-                                                            <img src="/assets/images/users/avatar-4.jpg" class="rounded-circle img-fluid userprofile" alt="">
+                                                            <img src="<?php echo base_url('public/assets') ?>/images/people/Joanne.jpg" class="rounded-circle img-fluid userprofile" alt="">
                                                         </div>
                                                         <span class="user-status"></span>
                                                     </div>
                                                     <div class="flex-grow-1 overflow-hidden">
-                                                        <p class="text-truncate mb-0">Janette Caster</p>
+                                                        <p class="text-truncate mb-0">Joanna Joyce Garcia Acar</p>
                                                     </div>
                                                 </div>
                                             </a>
@@ -121,12 +93,12 @@
                                                 <div class="d-flex align-items-center">
                                                     <div class="flex-shrink-0 chat-user-img online align-self-center me-2 ms-0">
                                                         <div class="avatar-xxs">
-                                                            <img src="/assets/images/users/avatar-5.jpg" class="rounded-circle img-fluid userprofile" alt="">
+                                                            <img src="<?php echo base_url('public/assets') ?>/images/people/Roy.jpg" class="rounded-circle img-fluid userprofile" alt="">
                                                         </div>
                                                         <span class="user-status"></span>
                                                     </div>
                                                     <div class="flex-grow-1 overflow-hidden">
-                                                        <p class="text-truncate mb-0">Sarah Beattie</p>
+                                                        <p class="text-truncate mb-0">Roy Isidro</p>
                                                     </div>
                                                     <div class="flex-shrink-0">
                                                         <span class="badge badge-soft-dark rounded p-1">5</span>
@@ -139,12 +111,12 @@
                                                 <div class="d-flex align-items-center">
                                                     <div class="flex-shrink-0 chat-user-img away align-self-center me-2 ms-0">
                                                         <div class="avatar-xxs">
-                                                            <img src="/assets/images/users/avatar-6.jpg" class="rounded-circle img-fluid userprofile" alt="">
+                                                            <img src="<?php echo base_url('public/assets') ?>/images/people/Dius.jpg" class="rounded-circle img-fluid userprofile" alt="">
                                                         </div>
                                                         <span class="user-status"></span>
                                                     </div>
                                                     <div class="flex-grow-1 overflow-hidden">
-                                                        <p class="text-truncate mb-0">Nellie Cornett</p>
+                                                        <p class="text-truncate mb-0">Dius Montenegro</p>
                                                     </div>
                                                     <div class="flex-shrink-0">
                                                         <span class="badge badge-soft-dark rounded p-1">2</span>
@@ -152,161 +124,17 @@
                                                 </div>
                                             </a>
                                         </li>
-
-                                        <li>
-                                            <a href="javascript: void(0);">
-                                                <div class="d-flex align-items-center">
-                                                    <div class="flex-shrink-0 chat-user-img online align-self-center me-2 ms-0">
-                                                        <div class="avatar-xxs">
-                                                            <div class="avatar-title rounded-circle bg-warning userprofile">
-                                                                C
-                                                            </div>
-                                                        </div>
-                                                        <span class="user-status"></span>
-                                                    </div>
-                                                    <div class="flex-grow-1 overflow-hidden">
-                                                        <p class="text-truncate mb-0">Chris Kiernan</p>
-                                                    </div>
-                                                </div>
-                                            </a>
-                                        </li>
                                         <li>
                                             <a href="javascript: void(0);">
                                                 <div class="d-flex align-items-center">
                                                     <div class="flex-shrink-0 chat-user-img away align-self-center me-2 ms-0">
                                                         <div class="avatar-xxs">
-                                                            <div class="avatar-title rounded-circle bg-info userprofile">
-                                                                E
-                                                            </div>
+                                                            <img src="<?php echo base_url('public/assets') ?>/images/people/Gad.jpg" class="rounded-circle img-fluid userprofile" alt="">
                                                         </div>
                                                         <span class="user-status"></span>
                                                     </div>
                                                     <div class="flex-grow-1 overflow-hidden">
-                                                        <p class="text-truncate mb-0">Edith Evans</p>
-                                                    </div>
-                                                </div>
-                                            </a>
-                                        </li>
-                                        <li>
-                                            <a href="javascript: void(0);">
-                                                <div class="d-flex align-items-center">
-                                                    <div class="flex-shrink-0 chat-user-img away align-self-center me-2 ms-0">
-                                                        <div class="avatar-xxs">
-                                                            <img src="/assets/images/users/avatar-7.jpg" class="rounded-circle img-fluid userprofile" alt="">
-                                                        </div>
-                                                        <span class="user-status"></span>
-                                                    </div>
-                                                    <div class="flex-grow-1 overflow-hidden">
-                                                        <p class="text-truncate mb-0">Joseph Siegel</p>
-                                                    </div>
-                                                </div>
-                                            </a>
-                                        </li>
-
-                                    </ul>
-                                </div>
-
-                                <div class="d-flex align-items-center px-4 mt-4 pt-2 mb-2">
-                                    <div class="flex-grow-1">
-                                        <h4 class="mb-0 fs-12 text-muted text-uppercase">Channels</h4>
-                                    </div>
-                                    <div class="flex-shrink-0">
-                                        <div data-bs-toggle="tooltip" data-bs-trigger="hover" data-bs-placement="bottom" title="Create group">
-
-                                            <!-- Button trigger modal -->
-                                            <button type="button" class="btn btn-soft-success btn-sm">
-                                                <i class="ri-add-line align-bottom"></i>
-                                            </button>
-                                        </div>
-                                    </div>
-                                </div>
-
-                                <div class="chat-message-list">
-
-                                    <ul class="list-unstyled chat-list chat-user-list mb-0" id="channelList">
-                                        <li>
-                                            <a href="javascript: void(0);" class="unread-msg-user">
-                                                <div class="d-flex align-items-center">
-                                                    <div class="flex-shrink-0 chat-user-img online align-self-center me-2 ms-0">
-                                                        <div class="avatar-xxs">
-                                                            <div class="avatar-title bg-light rounded-circle text-body">
-                                                                #
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                    <div class="flex-grow-1 overflow-hidden">
-                                                        <p class="text-truncate mb-0">Landing Design</p>
-                                                    </div>
-                                                    <div class="flex-shrink-0">
-                                                        <span class="badge badge-soft-dark rounded p-1">7</span>
-                                                    </div>
-                                                </div>
-                                            </a>
-                                        </li>
-                                        <li>
-                                            <a href="javascript: void(0);">
-                                                <div class="d-flex align-items-center">
-                                                    <div class="flex-shrink-0 chat-user-img online align-self-center me-2 ms-0">
-                                                        <div class="avatar-xxs">
-                                                            <div class="avatar-title bg-light rounded-circle text-body">
-                                                                #
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                    <div class="flex-grow-1 overflow-hidden">
-                                                        <p class="text-truncate mb-0">General</p>
-                                                    </div>
-                                                </div>
-                                            </a>
-                                        </li>
-                                        <li>
-                                            <a href="javascript: void(0);" class="unread-msg-user">
-                                                <div class="d-flex align-items-center">
-                                                    <div class="flex-shrink-0 chat-user-img online align-self-center me-2 ms-0">
-                                                        <div class="avatar-xxs">
-                                                            <div class="avatar-title bg-light rounded-circle text-body">
-                                                                #
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                    <div class="flex-grow-1 overflow-hidden">
-                                                        <p class="text-truncate mb-0">Project Tasks</p>
-                                                    </div>
-                                                    <div class="flex-shrink-0">
-                                                        <span class="badge badge-soft-dark rounded p-1">3</span>
-                                                    </div>
-                                                </div>
-                                            </a>
-                                        </li>
-
-                                        <li>
-                                            <a href="javascript: void(0);">
-                                                <div class="d-flex align-items-center">
-                                                    <div class="flex-shrink-0 chat-user-img online align-self-center me-2 ms-0">
-                                                        <div class="avatar-xxs">
-                                                            <div class="avatar-title bg-light rounded-circle text-dark">
-                                                                #
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                    <div class="flex-grow-1 overflow-hidden">
-                                                        <p class="text-truncate mb-0">Meeting</p>
-                                                    </div>
-                                                </div>
-                                            </a>
-                                        </li>
-                                        <li>
-                                            <a href="javascript: void(0);">
-                                                <div class="d-flex align-items-center">
-                                                    <div class="flex-shrink-0 chat-user-img online align-self-center me-2 ms-0">
-                                                        <div class="avatar-xxs">
-                                                            <div class="avatar-title bg-light rounded-circle text-dark">
-                                                                #
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                    <div class="flex-grow-1 overflow-hidden">
-                                                        <p class="text-truncate mb-0">Reporting</p>
+                                                        <p class="text-truncate mb-0">Gad Sususco</p>
                                                     </div>
                                                 </div>
                                             </a>
@@ -315,12 +143,10 @@
                                 </div>
                                 <!-- End chat-message-list -->
                             </div>
-
                         </div>
                         <!-- end chat leftsidebar -->
                         <!-- Start User chat -->
                         <div class="user-chat w-100 overflow-hidden">
-
                             <div class="chat-content d-lg-flex">
                                 <!-- start chat conversation section -->
                                 <div class="w-100 overflow-hidden position-relative">
@@ -336,11 +162,11 @@
                                                         <div class="flex-grow-1 overflow-hidden">
                                                             <div class="d-flex align-items-center">
                                                                 <div class="flex-shrink-0 chat-user-img online user-own-img align-self-center me-3 ms-0">
-                                                                    <img src="/assets/images/users/avatar-2.jpg" class="rounded-circle avatar-xs" alt="">
+                                                                    <img src="<?php echo base_url('public/assets') ?>/images/people/Johanna.jpg" class="rounded-circle avatar-xs" alt="">
                                                                     <span class="user-status"></span>
                                                                 </div>
                                                                 <div class="flex-grow-1 overflow-hidden">
-                                                                    <h5 class="text-truncate mb-0 fs-16"><a class="text-reset username" data-bs-toggle="offcanvas" href="#userProfileCanvasExample" aria-controls="userProfileCanvasExample">Lisa Parker</a></h5>
+                                                                    <h5 class="text-truncate mb-0 fs-16"><a class="text-reset username" data-bs-toggle="offcanvas" href="#userProfileCanvasExample" aria-controls="userProfileCanvasExample">Johanna Marie Quitoviera</a></h5>
                                                                     <p class="text-truncate text-muted mb-0 userStatus"><small class="fs-13">Online</small></p>
                                                                 </div>
                                                             </div>
@@ -364,13 +190,11 @@
                                                                 </div>
                                                             </div>
                                                         </li>
-
                                                         <li class="list-inline-item d-none d-lg-inline-block m-0">
                                                             <button type="button" class="btn btn-ghost-secondary btn-icon" data-bs-toggle="offcanvas" data-bs-target="#userProfileCanvasExample" aria-controls="userProfileCanvasExample">
                                                                 <i data-feather="info" class="icon-sm"></i>
                                                             </button>
                                                         </li>
-
                                                         <li class="list-inline-item m-0">
                                                             <div class="dropdown">
                                                                 <button class="btn btn-ghost-secondary btn-icon" type="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
@@ -387,17 +211,15 @@
                                                     </ul>
                                                 </div>
                                             </div>
-
                                         </div>
                                         <!-- end chat user head -->
-
                                         <div class="position-relative" id="users-chat">
                                             <div class="chat-conversation p-3 p-lg-4 " id="chat-conversation" data-simplebar>
                                                 <ul class="list-unstyled chat-conversation-list" id="users-conversation">
                                                     <li class="chat-list left">
                                                         <div class="conversation-list">
                                                             <div class="chat-avatar">
-                                                                <img src="/assets/images/users/avatar-2.jpg" alt="">
+                                                                <img src="<?php echo base_url('public/assets') ?>/images/people/Johanna.jpg" alt="">
                                                             </div>
                                                             <div class="user-chat-content">
                                                                 <div class="ctext-wrap">
@@ -452,7 +274,7 @@
                                                     <li class="chat-list left">
                                                         <div class="conversation-list">
                                                             <div class="chat-avatar">
-                                                                <img src="/assets/images/users/avatar-2.jpg" alt="">
+                                                                <img src="<?php echo base_url('public/assets') ?>/images/people/Johanna.jpg" alt="">
                                                             </div>
                                                             <div class="user-chat-content">
                                                                 <div class="ctext-wrap">
@@ -524,7 +346,7 @@
                                                     <li class="chat-list left">
                                                         <div class="conversation-list">
                                                             <div class="chat-avatar">
-                                                                <img src="/assets/images/users/avatar-2.jpg" alt="">
+                                                                <img src="<?php echo base_url('public/assets') ?>/images/people/Johanna.jpg" alt="">
                                                             </div>
                                                             <div class="user-chat-content">
                                                                 <div class="ctext-wrap">
@@ -556,7 +378,7 @@
                                                                         <div class="message-img-list">
                                                                             <div>
                                                                                 <a class="popup-img d-inline-block" href="/assets/images/small/img-2.jpg">
-                                                                                    <img src="/assets/images/small/img-2.jpg" alt="" class="rounded border">
+                                                                                    <img src="<?php echo base_url('public/assets') ?>/images/small/img-1.jpg" alt="" class="rounded border">
                                                                                 </a>
                                                                             </div>
                                                                             <div class="message-img-link">
@@ -652,18 +474,14 @@
                         </div>
                     </div>
                     <!-- end chat-wrapper -->
-
                 </div>
                 <!-- container-fluid -->
             </div>
             <!-- End Page-content -->
-
         </div>
         <!-- end main content-->
-
     </div>
     <!-- END layout-wrapper -->
-
     <div class="offcanvas offcanvas-end border-0" tabindex="-1" id="userProfileCanvasExample">
         <!--end offcanvas-header-->
         <div class="offcanvas-body profile-offcanvas p-0">

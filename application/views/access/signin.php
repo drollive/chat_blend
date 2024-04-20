@@ -16,6 +16,17 @@
         <div class="auth-page-content">
             <div class="container">
                 <div class="row">
+                    <?php if ($this->session->flashdata('success')) {
+                    ?>
+                        <p id="success-message"> <?= $this->session->flashdata('success') ?></p>
+                    <?php }
+                    ?>
+                    <?php if ($this->session->flashdata('error')) {
+                    ?>
+                        <p id="error-message"> <?= $this->session->flashdata('error') ?></p>
+                    <?php }
+                    ?>
+
                     <div class="col-lg-12">
                         <div class="text-center mt-sm-5 mb-4 text-white-50">
                             <div>
@@ -38,20 +49,19 @@
                                     <p class="text-muted">Sign in to continue to ChatBlend.</p>
                                 </div>
                                 <div class="p-2 mt-4">
-                                    <form action="<?= base_url() ?>home">
+                                    <form action="login" method="post">
                                         <div class="mb-3">
-                                            <label for="username" class="form-label">Username</label>
-                                            <input type="text" class="form-control" id="username" placeholder="Enter username">
+                                            <label for="email_address" class="form-label">Email Address</label>
+                                            <input type="text" class="form-control" name="email_address" id="email_address" placeholder="Enter Email Address">
                                         </div>
-
                                         <div class="mb-3">
                                             <div class="float-end">
                                                 <a href="auth-pass-reset-basic" class="text-muted">Forgot password?</a>
                                             </div>
                                             <label class="form-label" for="password-input">Password</label>
                                             <div class="position-relative auth-pass-inputgroup mb-3">
-                                                <input type="password" class="form-control pe-5" placeholder="Enter password" id="password-input">
-                                                <button class="btn btn-link position-absolute end-0 top-0 text-decoration-none text-muted" type="button" id="password-addon"><i class="ri-eye-fill align-middle"></i></button>
+                                                <input type="password" class="form-control pe-5 password-input" name="password" placeholder="Enter password" id="password-input">
+                                                <button class="btn btn-link position-absolute end-0 top-0 text-decoration-none text-muted password-addon" type="button" id="password-addon"><i class="ri-eye-fill align-middle"></i></button>
                                             </div>
                                         </div>
 

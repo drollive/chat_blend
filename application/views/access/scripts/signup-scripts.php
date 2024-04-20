@@ -9,6 +9,7 @@
   <script src="<?= base_url('public/assets') ?>/js/pages/particles.app.js"></script>
   <script src="<?= base_url('public/assets') ?>/js/pages/form-validation.init.js"></script>
   <script src="<?= base_url('public/assets') ?>/libs/moment/min/moment.min.js"></script>
+  <script src="<?= base_url('public/assets') ?>/js/pages/passowrd-create.init.js"></script>
 
   </body>
 

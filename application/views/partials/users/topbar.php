@@ -9,7 +9,7 @@
                     <div class="d-flex">
                         <!-- LOGO -->
                         <div class="navbar-brand-box horizontal-logo">
-                            <a href="<?php echo base_url() ?>customer/explore" class="logo logo-dark">
+                            <a href="<?php echo base_url() ?>home" class="logo logo-dark">
                                 <span class="logo-sm">
                                     <h1 class="display-7 fw-medium mt-3  lh-base text-black"><img src="<?php echo base_url('public/assets') ?>/images/svg/blender.svg" class="mb-2" alt="" height="35px">Chat<span id="logo-1">Blend</span></h1>
                                 </span>
@@ -18,7 +18,7 @@
                                 </span>
                             </a>
 
-                            <a href="<?php echo base_url() ?>customer/explore" class="logo logo-light">
+                            <a href="<?php echo base_url() ?>home" class="logo logo-light">
                                 <span class="logo-sm">
                                     <h1 class="display-7 fw-medium mt-3 lh-base text-white"><img src="<?php echo base_url('public/assets') ?>/images/svg/blender.svg" class="mb-2" alt="" width="40px" height="35px">Chat<span id="logo-1">Blend</span></h1>
                                 </span>
@@ -328,11 +328,10 @@
                                 <a class="dropdown-item" href="<?php echo base_url() ?>faq"><i class="mdi mdi-help-circle-outline text-muted fs-16 align-middle me-1"></i> <span class="align-middle">FAQ</b></span></a>
                                 <div class="dropdown-divider"></div>
                                 <a class="dropdown-item" href="<?php echo base_url() ?>settings"><i class="mdi mdi-cog-outline text-muted fs-16 align-middle me-1"></i> <span class="align-middle">Settings</span></a>
-                                <a class="dropdown-item" href="<?php echo base_url() ?>"><i class="mdi mdi-logout text-muted fs-16 align-middle me-1"></i> <span class="align-middle" data-key="t-logout">Logout</span></a>
+                                <a class="dropdown-item" href="<?php echo base_url()?>users/logoff"><i class="mdi mdi-logout text-muted fs-16 align-middle me-1"></i> <span class="align-middle" data-key="t-logout">Logout</span></a>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
         </header>
-        <script src="<?php echo base_url('public/assets') ?>/js/ajax/customer/topbar.ajax.js"></script>

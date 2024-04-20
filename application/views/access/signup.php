@@ -36,32 +36,31 @@
                                     <p class="text-muted">Get your free ChatBlend account now.</p>
                                 </div>
                                 <div class="p-2 mt-4">
-                                    <form class="needs-validation" novalidate action="/">
+                                    <form class="needs-validation" novalidate action="create" method="POST">
                                         <div class="mb-3">
-                                            <label for="first_name" class="form-label">Full Name <span class="text-danger">*</span></label>
-                                            <input type="text" class="form-control" id="first_name" name="first_name" placeholder="Enter Full Name" required>
+                                            <label for="full_name" class="form-label">Full Name <span class="text-danger">*</span></label>
+                                            <input type="text" class="form-control" id="full_name" name="full_name" placeholder="Enter Full Name" required>
                                             <div class="invalid-feedback">
                                                 Please enter Full Name
                                             </div>
                                         </div>
                                         <div class="mb-3">
                                             <label for="email_address" class="form-label">Email Address <span class="text-danger">*</span></label>
-                                            <input type="text" class="form-control" id="phone_number" name="email_address" required pattern="^(09|\+639)\d{9}$" placeholder="Enter your Email address">
+                                            <input type="email" class="form-control" id="email" name="email_address" placeholder="Enter Email Address" required>
                                             <div class="invalid-feedback">
-                                                Please enter a valid Phone Number
+                                                Please enter Email Address
                                             </div>
                                         </div>
                                         <div class="mb-3">
                                             <div class="col-lg-12">
-                                                <label for="gender" class="form-label">Language <span class="text-danger">*</span></label>
-                                                <select class="form-select js-example-basic-single" id="gender" name="gender" data-choices data-choices-search-false required>
+                                                <label for="language" class="form-label">Language <span class="text-danger">*</span></label>
+                                                <select class="form-select js-example-basic-single" id="language" name="language" data-choices data-choices-search-false required>
                                                     <option value="" selected disabled>Select your language</option>
-                                                    <option value="">English</option>
-                                                    <option value="">Chinese(Traditional)</option>
-                                                    <option value="">Italian</option>
-                                                    <option value="">Spanish</option>
-                                                    <option value="">Filipino</option>
-                                                    <option value="Others">Others</option>
+                                                    <option value="English">English</option>
+                                                    <option value="Chinese">Chinese</option>
+                                                    <option value="Italian">Italian</option>
+                                                    <option value="Spanish">Spanish</option>
+                                                    <option value="Filipino">Filipino</option>
                                                 </select>
                                                 <div class="invalid-feedback">
                                                     Please select your language
@@ -71,29 +70,28 @@
                                         <div class="mb-3">
                                             <label class="form-label" for="password">Password <span class="text-danger">*</span></label>
                                             <div class="position-relative auth-pass-inputgroup mb-3">
-                                                <input type="password" class="form-control pe-5" placeholder="Enter Password" id="password" name="password" required>
-                                                <button class="btn btn-link position-absolute end-0 top-0 text-decoration-none text-muted shadow-none" type="button" id="password-addon"><i class="bi bi-eye-slash" id="togglePassword"></i></button>
+                                                <input type="password" class="form-control pe-5 password-input" onpaste="return false" name="password" placeholder="Enter password" id="password-input" aria-describedby="passwordInput" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" required>
+                                                <button class="btn btn-link position-absolute end-0 top-0 text-decoration-none text-muted shadow-none password-addon" type="button" id="password-addon"><i class="bi bi-eye-slash" id="togglePassword"></i></button>
                                                 <div class="invalid-feedback">
                                                     Please create a Password
                                                 </div>
                                             </div>
                                             <label class="form-label" for="password">Confirm Password <span class="text-danger">*</span></label>
                                             <div class="position-relative auth-pass-inputgroup mb-3">
-                                                <input type="password" class="form-control pe-5" placeholder="Confirm Password" id="password" name="password" required>
-                                                <button class="btn btn-link position-absolute end-0 top-0 text-decoration-none text-muted shadow-none" type="button" id="password-addon"><i class="bi bi-eye-slash" id="togglePassword"></i></button>
-                                                <div class="invalid-feedback">
-                                                    Please create a Password
+                                                <input type="password" class="form-control pe-5 password-input" name="confirm_password" placeholder="Confirm Password" id="confirm-password-input" name="confirm_password" required>
+                                                <button class=" btn btn-link position-absolute end-0 top-0 text-decoration-none text-muted shadow-none password-addon" type="button" id="confirm-password-addon"><i class="bi bi-eye-slash" id="togglePassword"></i></button>
+                                                <div class="invalid-feedback" id="invalid-password">
+                                                    Password do not match!
                                                 </div>
                                             </div>
                                         </div>
-
                                         <div class="mb-4">
                                             <p class="mb-0 fs-13 text-muted fst-italic">By registering you agree to the ChatBlend <a href="#" class="text-primary text-decoration-underline fst-normal fw-semibold"> Terms of Use</a></p>
                                         </div>
 
-                                        <div id="password-contain" class="p-3 bg-light mb-2 rounded">
+                                        <div id="password-contain" class="p-1 bg-light mb-2 rounded">
                                             <h5 class="fs-13">Password must contain:</h5>
-                                            <p id="pass-length" class="invalid fs-13 mb-2">Minimum <b>8 characters</b></p>
+                                            <p id="pass-length" class="invalid fs-13 mb-2 pl-2">Minimum <b>8 characters</b></p>
                                             <p id="pass-lower" class="invalid fs-13 mb-2">At <b>lowercase</b> letter (a-z)</p>
                                             <p id="pass-upper" class="invalid fs-13 mb-2">At least <b>uppercase</b> letter (A-Z)</p>
                                             <p id="pass-number" class="invalid fs-13 mb-0">A least <b>number</b> (0-9)</p>
@@ -116,6 +114,12 @@
                                             </div>
                                         </div>
                                     </form>
+
+                                    <?php if ($this->session->flashdata('error')) {
+                                    ?>
+                                        <?= $this->session->flashdata('error') ?>
+                                    <?php }
+                                    ?>
                                 </div>
                             </div>
                             <div class="mt-5 text-center" id="acc">
@@ -149,7 +153,6 @@
         <!-- end Footer -->
     </div>
     <!-- end auth-page-wrapper -->
-
 </body>
 
 </html>

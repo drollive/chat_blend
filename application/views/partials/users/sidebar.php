@@ -5,19 +5,19 @@
                 <!-- Dark Logo-->
                 <a href="<?php echo base_url() ?>customer/explore" class="logo logo-dark">
                     <span class="logo-sm">
-                        <img src="<?php echo base_url('public/assets') ?>/images/logo-sm.png" alt="" height="35">
+                        <h1 class="display-7 fw-medium mt-3  lh-base text-black"><img src="<?php echo base_url('public/assets') ?>/images/svg/blender.svg" class="mb-2" alt="" height="35px">Chat<span id="logo-1">Blend</span></h1>
                     </span>
                     <span class="logo-lg">
-                        <img src="<?php echo base_url('public/assets') ?>/images/logo-dark.png" alt="" height="45">
+                        <h1 class="display-7 fw-medium mt-3  lh-base text-black"><img src="<?php echo base_url('public/assets') ?>/images/svg/blender.svg" class="mb-2" alt="" width="40px" height="35px">Chat<span id="logo-1">Blend</span></h1>
                     </span>
                 </a>
                 <!-- Light Logo-->
                 <a href="<?php echo base_url() ?>customer/explore" class="logo logo-light">
                     <span class="logo-sm">
-                        <img src="<?php echo base_url('public/assets') ?>/images/logo-sm.png" alt="" height="35">
+                        <h1 class="display-7 fw-medium mt-3 lh-base text-white"><img src="<?php echo base_url('public/assets') ?>/images/svg/blender.svg" class="mb-2" alt="" width="40px" height="35px">Chat<span id="logo-1">Blend</span></h1>
                     </span>
                     <span class="logo-lg">
-                        <img src="<?php echo base_url('public/assets') ?>/images/logo-light.png" alt="" height="45">
+                        <h1 class="display-7 fw-medium mt-3 lh-base text-white"><img src="<?php echo base_url('public/assets') ?>/images/svg/blender.svg" class="mb-2" alt="" width="40px" height="35px">Chat<span id="logo-1">Blend</span></h1>
                     </span>
                 </a>
                 <button type="button" class="btn btn-sm p-0 fs-20 header-item float-end btn-vertical-sm-hover" id="vertical-hover">

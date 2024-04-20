@@ -130,7 +130,7 @@
                 <div class="row justify-content-center">
                     <div class="col-lg-12">
                         <div class="text-center mb-5">
-                            <h1 class="mb-3 fw-bold lh-base text-white">What is ChatBlend?</h1>
+                            <h1 class="mb-3 fw-bold lh-base text-white">What is Chat<span>Blend</span>?</h1>
                             <p class="mb-4 text-white">The language learning app where millions of people teach each other.</p>
                             <div class="row g-5">
                                 <div class="col-lg-6">
@@ -154,7 +154,7 @@
                             </div><!-- end row -->
                         </div><!-- end col -->
                     </div><!-- end row -->
-                    <h1 class="text-center lh-base pb-5" id="connect-info">Anne and Stefania connect on the <span class="connect-info">ChatBlend app...</span></h1>
+                    <h1 class="text-center lh-base pb-5" id="connect-info">Anne and Stefania connect on the Chat<span class="connect-info">Blend app...</span></h1>
                 </div>
 
             </div><!-- end container -->

@@ -51,6 +51,8 @@
 <!-- Icons Css -->
 <link href="<?php echo base_url('public/assets') ?>/css/icons.min.css" rel="stylesheet" type="text/css" />
 
+<link href="<?php echo base_url('public/assets') ?>/libs/glightbox/css/glightbox.min.css" rel="stylesheet" type="text/css" />
+
 <!-- bootstrap icons -->
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.3/font/bootstrap-icons.css">
 

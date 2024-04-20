@@ -3405,22 +3405,22 @@ code {
   }
 }
 [type=tel]::-webkit-input-placeholder, [type=url]::-webkit-input-placeholder, [type=email]::-webkit-input-placeholder, [type=number]::-webkit-input-placeholder {
-  text-align: right;
+  text-align: left;
 }
 [type=tel]::-moz-placeholder, [type=url]::-moz-placeholder, [type=email]::-moz-placeholder, [type=number]::-moz-placeholder {
-  text-align: right;
+  text-align: left;
 }
 [type=tel]:-ms-input-placeholder, [type=url]:-ms-input-placeholder, [type=email]:-ms-input-placeholder, [type=number]:-ms-input-placeholder {
-  text-align: right;
+  text-align: left;
 }
 [type=tel]::-ms-input-placeholder, [type=url]::-ms-input-placeholder, [type=email]::-ms-input-placeholder, [type=number]::-ms-input-placeholder {
-  text-align: right;
+  text-align: left;
 }
 [type=tel]::placeholder,
 [type=url]::placeholder,
 [type=email]::placeholder,
 [type=number]::placeholder {
-  text-align: right;
+  text-align: left;
 }
 
 .main-chart .chart-border-left {
@@ -12449,7 +12449,7 @@ span.flatpickr-weekday {
 }
 #password-contain p.valid::before {
   position: relative;
-  right: -8px;
+  right: 1px;
   content: "✔";
 }
 #password-contain p.invalid {
@@ -12457,9 +12457,10 @@ span.flatpickr-weekday {
 }
 #password-contain p.invalid::before {
   position: relative;
-  right: -8px;
+  right: 1px;
   content: "✖";
 }
+
 
 .dash-filter-picker {
   min-width: 210px !important;
@@ -15542,4 +15543,24 @@ span.flatpickr-weekday {
 
 #logo-1{
     color: rgb(13, 188, 109);
+}
+
+#success-message{
+    margin: 10px auto;
+    width: 400px;
+    height: 30px;
+    line-height: 30px;
+    color: white;
+    background-color: rgb(13, 188, 109);
+    text-align: center;
+}
+
+#error-message{
+    margin: 10px auto;
+    width: 400px;
+    height: 30px;
+    line-height: 30px;
+    color: white;
+    background-color: #f06548;
+    text-align: center;
 }
