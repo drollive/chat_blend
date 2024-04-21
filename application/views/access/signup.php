@@ -38,10 +38,17 @@
                                 <div class="p-2 mt-4">
                                     <form class="needs-validation" novalidate action="create" method="POST">
                                         <div class="mb-3">
-                                            <label for="full_name" class="form-label">Full Name <span class="text-danger">*</span></label>
-                                            <input type="text" class="form-control" id="full_name" name="full_name" placeholder="Enter Full Name" required>
+                                            <label for="first_name" class="form-label">First Name <span class="text-danger">*</span></label>
+                                            <input type="text" class="form-control" id="first_name" name="first_name" placeholder="Enter First Name" required>
                                             <div class="invalid-feedback">
-                                                Please enter Full Name
+                                                Please enter First Name
+                                        </div>
+                                        <div class="mb-3">
+                                            </div>
+                                            <label for="last_name" class="form-label">Last Name <span class="text-danger">*</span></label>
+                                            <input type="text" class="form-control" id="last_name" name="last_name" placeholder="Enter Last Name" required>
+                                            <div class="invalid-feedback">
+                                                Please enter Last Name
                                             </div>
                                         </div>
                                         <div class="mb-3">

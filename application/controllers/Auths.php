@@ -31,7 +31,8 @@ class Auths extends CI_Controller
 
         if ($result == "valid") {
             $user = array(
-                'full_name' => $this->input->post('full_name'),
+                'first_name' => $this->input->post('first_name'),
+                'last_name' => $this->input->post('last_name'),
                 'email_address' => $this->input->post('email_address'),
                 'language'  => $this->input->post('language'),
                 'password' => md5($this->input->post('password'))
@@ -67,10 +68,11 @@ class Auths extends CI_Controller
             $userdata = array(
                 'user_id' => $result['id'],
                 'email_address' => $result['email_address'],
-                'full_name' => $result['full_name'],
+                'first_name' => $result['first_name'],
+                'last_name' => $result ['last_name'],
                 'language' => $result['language'],
+                'profile_picture' => $result['profile_picture'],
                 'logged_in' => TRUE
-                // Add more session data as needed
             );
             $this->session->set_userdata($userdata);
             redirect('users/home');

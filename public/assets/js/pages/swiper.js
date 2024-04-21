@@ -204,6 +204,7 @@ var responsiveSwiper = new Swiper(".responsive-swiper", {
     loop: true,
     slidesPerView: 1,
     spaceBetween: 10,
+    speed: 3000,
     pagination: {
         el: ".swiper-pagination",
         clickable: true
@@ -221,5 +222,9 @@ var responsiveSwiper = new Swiper(".responsive-swiper", {
             slidesPerView: 4,
             spaceBetween: 50
         }
-    }
+    },
+    autoplay: { // Add the autoplay section
+        delay: 0, // Slide delay in milliseconds (e.g., 3 seconds)
+        disableOnInteraction: false // Optional: Keep autoplay running after interaction
+    },
 });

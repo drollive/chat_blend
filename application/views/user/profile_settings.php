@@ -6,41 +6,48 @@
                 <div class="container-fluid">
                     <div class="position-relative mx-n4 mt-n4">
                         <div class="profile-wid-bg profile-setting-img">
-                            <img src="<?php echo base_url('public/assets') ?>/images/Flag/Filipino.png" class="profile-wid-img" alt="">
+                            <img src="<?php echo base_url('public/assets') ?>/images/Flag/<?= $this->session->userdata('language') ?>.png" class="profile-wid-img" alt="">
                             <div class="overlay-content">
                                 <div class="text-end p-3">
                                     <div class="p-0 ms-auto rounded-circle profile-photo-edit">
-                                        <input id="profile-foreground-img-file-input" type="file" class="profile-foreground-img-file-input">
-                                        <label for="profile-foreground-img-file-input" class="profile-photo-edit btn btn-light">
-                                            <i class="ri-image-edit-line align-bottom me-1"></i> Change Cover
-                                        </label>
                                     </div>
                                 </div>
                             </div>
                         </div>
                     </div>
-
                     <div class="row">
                         <div class="col-xxl-3">
                             <div class="card mt-n5">
                                 <div class="card-body p-4">
                                     <div class="text-center">
                                         <div class="profile-user position-relative d-inline-block mx-auto  mb-4">
-                                            <img src="<?php echo base_url('public/assets') ?>/images/people/Filwayne.jpg" class="rounded-circle avatar-xl img-thumbnail user-profile-image" alt="user-profile-image">
+                                            <img src="<?= ($this->session->userdata('profile_picture') != "") ? $this->session->userdata('profile_picture') : base_url('public/assets/images/people/default.png') ?>" class="rounded-circle avatar-xl img-thumbnail user-profile-image" alt="user-profile-image">
                                             <div class="avatar-xs p-0 rounded-circle profile-photo-edit">
-                                                <input id="profile-img-file-input" type="file" class="profile-img-file-input">
-                                                <label for="profile-img-file-input" class="profile-photo-edit avatar-xs">
-                                                    <span class="avatar-title rounded-circle bg-light text-body">
-                                                        <i class="ri-camera-fill"></i>
-                                                    </span>
-                                                </label>
+                                                <form action="upload" method="post" enctype="multipart/form-data" id="profileImageForm">
+                                                    <input id="profile-img-file-input" type="file" name="profile_image" class="profile-img-file-input">
+                                                    <label for="profile-img-file-input" class="profile-photo-edit avatar-xs">
+                                                        <span class="avatar-title rounded-circle bg-light text-body">
+                                                            <i class="ri-camera-fill"></i>
+                                                        </span>
+                                                    </label>
+                                                </form>
                                             </div>
                                         </div>
-                                        <h5 class="mb-1">Filwayne Kean De Lara</h5>
+                                        <h5 class="mb-1"><?= $this->session->userdata('first_name') . " " . $this->session->userdata('last_name') ?></h5>
                                         <p class="text-muted mb-0">Filipino</p>
                                     </div>
                                 </div>
                             </div>
+                            <?php if ($this->session->flashdata('success')) {
+                            ?>
+                                <p id="success-message"> <?= $this->session->flashdata('success') ?></p>
+                            <?php }
+                            ?>
+                            <?php if ($this->session->flashdata('error')) {
+                            ?>
+                                <p id="error-message"> <?= $this->session->flashdata('error') ?></p>
+                            <?php }
+                            ?>
                             <!--end card-->
                         </div>
                         <!--end col-->
@@ -73,20 +80,19 @@
                                                     <div class="col-lg-6">
                                                         <div class="mb-3">
                                                             <label for="firstnameInput" class="form-label">Full Name</label>
-                                                            <input type="text" class="form-control" id="firstnameInput" placeholder="Enter your firstname" value="Filwayne Kean De Lara">
+                                                            <input type="text" class="form-control" id="firstnameInput" placeholder="Enter your firstname" value="<?= $this->session->userdata('first_name') . " " . $this->session->userdata('last_name') ?>">
                                                         </div>
                                                     </div>
                                                     <!--end col-->
                                                     <div class="col-lg-6">
                                                         <label for="gender" class="form-label">Language <span class="text-danger">*</span></label>
                                                         <select class="form-select js-example-basic-single" id="gender" name="gender" data-choices data-choices-search-false required>
-                                                            <option value="" selected disabled>Filipino</option>
-                                                            <option value="">English</option>
-                                                            <option value="">Chinese</option>
-                                                            <option value="">Italian</option>
-                                                            <option value="">Spanish</option>
-                                                            <option value="">Filipino</option>
-                                                            <option value="Others">Others</option>
+                                                            <option value="" selected disabled><?= $this->session->userdata('language') ?></option>
+                                                            <option value="english">English</option>
+                                                            <option value="chinese">Chinese</option>
+                                                            <option value="italian">Italian</option>
+                                                            <option value="spanish">Spanish</option>
+                                                            <option value="filipino">Filipino</option>
                                                         </select>
                                                         <div class="invalid-feedback">
                                                             Please select your language
@@ -103,7 +109,7 @@
                                                     <div class="col-lg-6">
                                                         <div class="mb-3">
                                                             <label for="emailInput" class="form-label">Email Address</label>
-                                                            <input type="email" class="form-control" id="emailInput" placeholder="Enter your email" value="dfilwayne@gmail.com">
+                                                            <input type="email" class="form-control" id="emailInput" placeholder="Enter your email" value="<?= $this->session->userdata('email_address') ?>">
                                                         </div>
                                                     </div>
                                                     <!--end col-->

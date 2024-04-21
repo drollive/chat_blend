@@ -40,7 +40,7 @@
                                 </div>
                                 <div class="chat-message-list">
                                     <ul class="list-unstyled chat-list chat-user-list" id="userList">
-                                        <li class="active">
+                                        <!-- <li class="active">
                                             <a href="javascript: void(0);">
                                                 <div class="d-flex align-items-center">
                                                     <div class="flex-shrink-0 chat-user-img online align-self-center me-2 ms-0">
@@ -54,8 +54,8 @@
                                                     </div>
                                                 </div>
                                             </a>
-                                        </li>
-                                        <li>
+                                        </li> -->
+                                        <!-- <li>
                                             <a href="javascript: void(0);" class="unread-msg-user">
                                                 <div class="d-flex align-items-center">
                                                     <div class="flex-shrink-0 chat-user-img online align-self-center me-2 ms-0">
@@ -72,8 +72,8 @@
                                                     </div>
                                                 </div>
                                             </a>
-                                        </li>
-                                        <li>
+                                        </li> -->
+                                        <!-- <li>
                                             <a href="javascript: void(0);">
                                                 <div class="d-flex align-items-center">
                                                     <div class="flex-shrink-0 chat-user-img online align-self-center me-2 ms-0">
@@ -138,7 +138,7 @@
                                                     </div>
                                                 </div>
                                             </a>
-                                        </li>
+                                        </li> -->
                                     </ul>
                                 </div>
                                 <!-- End chat-message-list -->
@@ -162,11 +162,11 @@
                                                         <div class="flex-grow-1 overflow-hidden">
                                                             <div class="d-flex align-items-center">
                                                                 <div class="flex-shrink-0 chat-user-img online user-own-img align-self-center me-3 ms-0">
-                                                                    <img src="<?php echo base_url('public/assets') ?>/images/people/Johanna.jpg" class="rounded-circle avatar-xs" alt="">
+                                                                    <img src="<?php echo base_url('public/assets') ?>/images/people/<?= $this->session->userdata('first_name')?>.jpg" class="rounded-circle avatar-xs" alt="">
                                                                     <span class="user-status"></span>
                                                                 </div>
                                                                 <div class="flex-grow-1 overflow-hidden">
-                                                                    <h5 class="text-truncate mb-0 fs-16"><a class="text-reset username" data-bs-toggle="offcanvas" href="#userProfileCanvasExample" aria-controls="userProfileCanvasExample">Johanna Marie Quitoviera</a></h5>
+                                                                    <h5 class="text-truncate mb-0 fs-16"><a class="text-reset username" data-bs-toggle="offcanvas" href="#userProfileCanvasExample" aria-controls="userProfileCanvasExample"><?= $this->session->userdata('first_name') . " " . $this->session->userdata('last_name') ?> (Me)</a></h5>
                                                                     <p class="text-truncate text-muted mb-0 userStatus"><small class="fs-13">Online</small></p>
                                                                 </div>
                                                             </div>
@@ -216,7 +216,7 @@
                                         <div class="position-relative" id="users-chat">
                                             <div class="chat-conversation p-3 p-lg-4 " id="chat-conversation" data-simplebar>
                                                 <ul class="list-unstyled chat-conversation-list" id="users-conversation">
-                                                    <li class="chat-list left">
+                                                    <!-- <li class="chat-list left">
                                                         <div class="conversation-list">
                                                             <div class="chat-avatar">
                                                                 <img src="<?php echo base_url('public/assets') ?>/images/people/Johanna.jpg" alt="">
@@ -242,10 +242,10 @@
                                                                 <div class="conversation-name"><small class="text-muted time">09:07 am</small> <span class="text-success check-message-icon"><i class="ri-check-double-line align-bottom"></i></span></div>
                                                             </div>
                                                         </div>
-                                                    </li>
+                                                    </li> -->
                                                     <!-- chat-list -->
 
-                                                    <li class="chat-list right">
+                                                    <!-- <li class="chat-list right">
                                                         <div class="conversation-list">
                                                             <div class="user-chat-content">
                                                                 <div class="ctext-wrap">
@@ -268,10 +268,10 @@
                                                                 <div class="conversation-name"><small class="text-muted time">09:08 am</small> <span class="text-success check-message-icon"><i class="ri-check-double-line align-bottom"></i></span></div>
                                                             </div>
                                                         </div>
-                                                    </li>
+                                                    </li> -->
                                                     <!-- chat-list -->
 
-                                                    <li class="chat-list left">
+                                                    <!-- <li class="chat-list left">
                                                         <div class="conversation-list">
                                                             <div class="chat-avatar">
                                                                 <img src="<?php echo base_url('public/assets') ?>/images/people/Johanna.jpg" alt="">
@@ -314,10 +314,10 @@
                                                                 <div class="conversation-name"><small class="text-muted time">09:10 am</small> <span class="text-success check-message-icon"><i class="ri-check-double-line align-bottom"></i></span></div>
                                                             </div>
                                                         </div>
-                                                    </li>
+                                                    </li> -->
                                                     <!-- chat-list -->
 
-                                                    <li class="chat-list right">
+                                                    <!-- <li class="chat-list right">
                                                         <div class="conversation-list">
                                                             <div class="user-chat-content">
                                                                 <div class="ctext-wrap">
@@ -340,10 +340,10 @@
                                                                 <div class="conversation-name"><small class="text-muted time">09:12 am</small> <span class="text-success check-message-icon"><i class="ri-check-double-line align-bottom"></i></span></div>
                                                             </div>
                                                         </div>
-                                                    </li>
+                                                    </li> -->
                                                     <!-- chat-list -->
 
-                                                    <li class="chat-list left">
+                                                    <!-- <li class="chat-list left">
                                                         <div class="conversation-list">
                                                             <div class="chat-avatar">
                                                                 <img src="<?php echo base_url('public/assets') ?>/images/people/Johanna.jpg" alt="">
@@ -404,7 +404,7 @@
                                                                 <div class="conversation-name"><small class="text-muted time">09:30 am</small> <span class="text-success check-message-icon"><i class="ri-check-double-line align-bottom"></i></span></div>
                                                             </div>
                                                         </div>
-                                                    </li>
+                                                    </li> -->
                                                     <!-- chat-list -->
                                                 </ul>
                                                 <!-- end chat-conversation-list -->

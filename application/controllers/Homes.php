@@ -5,7 +5,8 @@ class Homes extends CI_Controller {
 
 	public function index()
 	{
-        if ($this->session->userdata('logged_in')) {
+        if ($this->session->userdata('logged_in')) 
+        {
             redirect('users/home');
         } 
         
@@ -13,6 +14,7 @@ class Homes extends CI_Controller {
         $this->load->view('partials/title-meta');
         $this->load->view('partials/head-css');
         $this->load->view('home/landing');
+        $this->load->view('home/scripts/customer-scripts');
         $this->load->view('partials/vendor-scripts');
         
 	}

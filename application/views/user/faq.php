@@ -49,7 +49,7 @@
                                             <div class="accordion-item">
                                                 <h2 class="accordion-header" id="genques-headingOne">
                                                     <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#genques-collapseOne" aria-expanded="false" aria-controls="genques-collapseOne">
-                                                        What is Lorem Ipsum ?
+                                                        What is ChatBlend, and how does it work?
                                                     </button>
                                                 </h2>
                                                 <div id="genques-collapseOne" class="accordion-collapse collapse" aria-labelledby="genques-headingOne" data-bs-parent="#genques-accordion">
@@ -61,7 +61,7 @@
                                             <div class="accordion-item">
                                                 <h2 class="accordion-header" id="genques-headingTwo">
                                                     <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#genques-collapseTwo" aria-expanded="false" aria-controls="genques-collapseTwo">
-                                                        Why do we use it ?
+                                                        Which languages does ChatBlend support?
                                                     </button>
                                                 </h2>
                                                 <div id="genques-collapseTwo" class="accordion-collapse collapse" aria-labelledby="genques-headingTwo" data-bs-parent="#genques-accordion">
@@ -73,7 +73,7 @@
                                             <div class="accordion-item">
                                                 <h2 class="accordion-header" id="genques-headingThree">
                                                     <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#genques-collapseThree" aria-expanded="false" aria-controls="genques-collapseThree">
-                                                        Where does it come from ?
+                                                        Is ChatBlend free to use?
                                                     </button>
                                                 </h2>
                                                 <div id="genques-collapseThree" class="accordion-collapse collapse" aria-labelledby="genques-headingThree" data-bs-parent="#genques-accordion">
@@ -85,7 +85,7 @@
                                             <div class="accordion-item">
                                                 <h2 class="accordion-header" id="genques-headingFour">
                                                     <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#genques-collapseFour" aria-expanded="false" aria-controls="genques-collapseFour">
-                                                        Where can I get some ?
+                                                        What makes ChatBlend different from other language learning apps?
                                                     </button>
                                                 </h2>
                                                 <div id="genques-collapseFour" class="accordion-collapse collapse" aria-labelledby="genques-headingFour" data-bs-parent="#genques-accordion">
@@ -114,7 +114,7 @@
                                             <div class="accordion-item">
                                                 <h2 class="accordion-header" id="manageaccount-headingOne">
                                                     <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#manageaccount-collapseOne" aria-expanded="false" aria-controls="manageaccount-collapseOne">
-                                                        Where can I get some ?
+                                                        How do I edit my profile?
                                                     </button>
                                                 </h2>
                                                 <div id="manageaccount-collapseOne" class="accordion-collapse collapse" aria-labelledby="manageaccount-headingOne" data-bs-parent="#manageaccount-accordion">
@@ -126,7 +126,7 @@
                                             <div class="accordion-item">
                                                 <h2 class="accordion-header" id="manageaccount-headingTwo">
                                                     <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#manageaccount-collapseTwo" aria-expanded="false" aria-controls="manageaccount-collapseTwo">
-                                                        Where does it come from ?
+                                                        I forgot my password. How do I reset it?
                                                     </button>
                                                 </h2>
                                                 <div id="manageaccount-collapseTwo" class="accordion-collapse collapse" aria-labelledby="manageaccount-headingTwo" data-bs-parent="#manageaccount-accordion">
@@ -138,7 +138,7 @@
                                             <div class="accordion-item">
                                                 <h2 class="accordion-header" id="manageaccount-headingThree">
                                                     <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#manageaccount-collapseThree" aria-expanded="false" aria-controls="manageaccount-collapseThree">
-                                                        Why do we use it ?
+                                                        Can I delete my ChatBlend account?
                                                     </button>
                                                 </h2>
                                                 <div id="manageaccount-collapseThree" class="accordion-collapse collapse" aria-labelledby="manageaccount-headingThree" data-bs-parent="#manageaccount-accordion">
@@ -179,7 +179,7 @@
                                             <div class="accordion-item">
                                                 <h2 class="accordion-header" id="privacy-headingOne">
                                                     <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#privacy-collapseOne" aria-expanded="false" aria-controls="privacy-collapseOne">
-                                                        Why do we use it ?
+                                                        What personal information does ChatBlend collect?
                                                     </button>
                                                 </h2>
                                                 <div id="privacy-collapseOne" class="accordion-collapse collapse" aria-labelledby="privacy-headingOne" data-bs-parent="#privacy-accordion">
@@ -191,7 +191,7 @@
                                             <div class="accordion-item">
                                                 <h2 class="accordion-header" id="privacy-headingTwo">
                                                     <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#privacy-collapseTwo" aria-expanded="false" aria-controls="privacy-collapseTwo">
-                                                        Where can I get some ?
+                                                        How does ChatBlend protect my data?
                                                     </button>
                                                 </h2>
                                                 <div id="privacy-collapseTwo" class="accordion-collapse collapse" aria-labelledby="privacy-headingTwo" data-bs-parent="#privacy-accordion">
@@ -203,7 +203,7 @@
                                             <div class="accordion-item">
                                                 <h2 class="accordion-header" id="privacy-headingThree">
                                                     <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#privacy-collapseThree" aria-expanded="false" aria-controls="privacy-collapseThree">
-                                                        What is Lorem Ipsum ?
+                                                        Can I control who sees my profile or who contacts me?
                                                     </button>
                                                 </h2>
                                                 <div id="privacy-collapseThree" class="accordion-collapse collapse" aria-labelledby="privacy-headingThree" data-bs-parent="#privacy-accordion">
@@ -215,7 +215,7 @@
                                             <div class="accordion-item">
                                                 <h2 class="accordion-header" id="privacy-headingFour">
                                                     <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#privacy-collapseFour" aria-expanded="false" aria-controls="privacy-collapseFour">
-                                                        Where does it come from ?
+                                                        How do I report inappropriate behavior or block another user?
                                                     </button>
                                                 </h2>
                                                 <div id="privacy-collapseFour" class="accordion-collapse collapse" aria-labelledby="privacy-headingFour" data-bs-parent="#privacy-accordion">

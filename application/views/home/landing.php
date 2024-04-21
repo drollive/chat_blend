@@ -198,6 +198,31 @@
                                 <div class="swiper-slide">
                                     <div class="gallery-box card">
                                         <div class="gallery-container">
+                                            <a class="image-popup" href="assets/images/small/img-1.jpg" title="">
+                                                <img class="gallery-img img-fluid mx-auto" src="<?php echo base_url('public/assets') ?>/images/people/Dave.jpg" alt="" />
+                                                <div class="gallery-overlay">
+                                                    <h5 class="overlay-caption">Dave</h5>
+                                                </div>
+                                            </a>
+                                        </div>
+                                        <div class="box-content">
+                                            <div class="d-flex align-items-center mt-1">
+                                                <div class="flex-grow-1"><span>Can teach: </span> <img src="<?php echo base_url('public/assets') ?>/images/flags/philippines.png" id="language"></div>
+                                                <div class="flex-grow-1"><span>Want to learn: </span> <img src="<?php echo base_url('public/assets') ?>/images/flags/italian.png" id="language"></div>
+                                                <div class="flex-shrink-0">
+                                                    <div class="d-flex gap-3">
+                                                        <button type="button" class="btn btn-sm fs-12 btn-link text-body text-decoration-none px-0">
+                                                            <i class="ri-thumb-up-fill text-muted align-bottom me-1"></i> 2.2K
+                                                        </button>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="gallery-box card">
+                                        <div class="gallery-container">
                                             <a class="image-popup" href="assets/images/small/img-2.jpg" title="">
                                                 <img class="gallery-img img-fluid mx-auto" src="<?php echo base_url('public/assets') ?>/images/people/Jayson.jpg" alt="" />
                                                 <div class="gallery-overlay">
@@ -213,6 +238,56 @@
                                                     <div class="d-flex gap-3">
                                                         <button type="button" class="btn btn-sm fs-12 btn-link text-body text-decoration-none px-0">
                                                             <i class="ri-thumb-up-fill text-muted align-bottom me-1"></i> 3.2K
+                                                        </button>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="gallery-box card">
+                                        <div class="gallery-container">
+                                            <a class="image-popup" href="assets/images/small/img-2.jpg" title="">
+                                                <img class="gallery-img img-fluid mx-auto" src="<?php echo base_url('public/assets') ?>/images/people/Elison.jpg" alt="" />
+                                                <div class="gallery-overlay">
+                                                    <h5 class="overlay-caption">Elison Duero</h5>
+                                                </div>
+                                            </a>
+                                        </div>
+                                        <div class="box-content">
+                                            <div class="d-flex align-items-center mt-1">
+                                                <div class="flex-grow-1"><span>Can teach: </span> <img src="<?php echo base_url('public/assets') ?>/images/flags/china.png" id="language"></div>
+                                                <div class="flex-grow-1"><span>Want to learn: </span> <img src="<?php echo base_url('public/assets') ?>/images/flags/italian.png" id="language"></div>
+                                                <div class="flex-shrink-0">
+                                                    <div class="d-flex gap-3">
+                                                        <button type="button" class="btn btn-sm fs-12 btn-link text-body text-decoration-none px-0">
+                                                            <i class="ri-thumb-up-fill text-muted align-bottom me-1"></i> 3.2K
+                                                        </button>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="gallery-box card">
+                                        <div class="gallery-container">
+                                            <a class="image-popup" href="assets/images/small/img-6.jpg" title="">
+                                                <img class="gallery-img img-fluid mx-auto" src="<?php echo base_url('public/assets') ?>/images/people/Joanne.jpg" alt="" />
+                                                <div class="gallery-overlay">
+                                                    <h5 class="overlay-caption">Joanna Joyce Garcia Acar</h5>
+                                                </div>
+                                            </a>
+                                        </div>
+                                        <div class="box-content">
+                                            <div class="d-flex align-items-center mt-1">
+                                                <div class="flex-grow-1"><span>Can teach: </span> <img src="<?php echo base_url('public/assets') ?>/images/flags/spain.png" id="language"></div>
+                                                <div class="flex-grow-1"><span>Want to learn: </span> <img src="<?php echo base_url('public/assets') ?>/images/flags/china.png" id="language"></div>
+                                                <div class="flex-shrink-0">
+                                                    <div class="d-flex gap-3">
+                                                        <button type="button" class="btn btn-sm fs-12 btn-link text-body text-decoration-none px-0">
+                                                            <i class="ri-thumb-up-fill text-muted align-bottom me-1"></i> 3.4K
                                                         </button>
                                                     </div>
                                                 </div>
@@ -263,31 +338,6 @@
                                                     <div class="d-flex gap-3">
                                                         <button type="button" class="btn btn-sm fs-12 btn-link text-body text-decoration-none px-0">
                                                             <i class="ri-thumb-up-fill text-muted align-bottom me-1"></i> 825
-                                                        </button>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="swiper-slide">
-                                    <div class="gallery-box card">
-                                        <div class="gallery-container">
-                                            <a class="image-popup" href="assets/images/small/img-6.jpg" title="">
-                                                <img class="gallery-img img-fluid mx-auto" src="<?php echo base_url('public/assets') ?>/images/people/Joanne.jpg" alt="" />
-                                                <div class="gallery-overlay">
-                                                    <h5 class="overlay-caption">Joanna Joyce Garcia Acar</h5>
-                                                </div>
-                                            </a>
-                                        </div>
-                                        <div class="box-content">
-                                            <div class="d-flex align-items-center mt-1">
-                                                <div class="flex-grow-1"><span>Can teach: </span> <img src="<?php echo base_url('public/assets') ?>/images/flags/spain.png" id="language"></div>
-                                                <div class="flex-grow-1"><span>Want to learn: </span> <img src="<?php echo base_url('public/assets') ?>/images/flags/china.png" id="language"></div>
-                                                <div class="flex-shrink-0">
-                                                    <div class="d-flex gap-3">
-                                                        <button type="button" class="btn btn-sm fs-12 btn-link text-body text-decoration-none px-0">
-                                                            <i class="ri-thumb-up-fill text-muted align-bottom me-1"></i> 3.4K
                                                         </button>
                                                     </div>
                                                 </div>
