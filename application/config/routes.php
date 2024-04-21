@@ -57,7 +57,6 @@ $route['create']                = 'auths/create';
 $route['login']                = 'auths/login';
 $route['logoff']                = 'auths/logoff';
 
-
 $route['home' ]                 = 'users/home';
 $route['chats']                 = 'users/chats';
 $route['faq'  ]                 = 'users/faq';
@@ -65,6 +64,7 @@ $route['profile']               = 'users/profile';
 $route['profile_settings']      = 'users/profile_settings';
 $route['blogs']                 = 'users/blogs';
 $route['upload']                = 'users/upload';
+$route['update']                = 'users/update';
 
 $route['404_override'] = '';
 $route['translate_uri_dashes'] = FALSE;

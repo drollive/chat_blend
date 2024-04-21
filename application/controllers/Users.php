@@ -10,6 +10,7 @@ class Users extends CI_Controller
             $this->load->view('partials/users/main');
             $this->load->view('partials/title-meta');
             $this->load->view('partials/head-css');
+            $this->load->view('partials/customizer');
             $this->load->view('user/home');
             $this->load->view('partials/users/topbar');
             $this->load->view('partials/users/sidebar');
@@ -27,6 +28,7 @@ class Users extends CI_Controller
             $this->load->view('partials/users/main');
             $this->load->view('partials/title-meta');
             $this->load->view('partials/head-css');
+            $this->load->view('partials/customizer');
             $this->load->view('user/chats');
             $this->load->view('partials/users/topbar');
             $this->load->view('partials/users/sidebar');
@@ -44,6 +46,7 @@ class Users extends CI_Controller
             $this->load->view('partials/users/main');
             $this->load->view('partials/title-meta');
             $this->load->view('partials/head-css');
+            $this->load->view('partials/customizer');
             $this->load->view('user/faq');
             $this->load->view('partials/users/topbar');
             $this->load->view('partials/users/sidebar');
@@ -61,6 +64,7 @@ class Users extends CI_Controller
             $this->load->view('partials/users/main');
             $this->load->view('partials/title-meta');
             $this->load->view('partials/head-css');
+            $this->load->view('partials/customizer');
             $this->load->view('user/profile');
             $this->load->view('partials/users/topbar');
             $this->load->view('partials/users/sidebar');
@@ -78,6 +82,7 @@ class Users extends CI_Controller
             $this->load->view('partials/users/main');
             $this->load->view('partials/title-meta');
             $this->load->view('partials/head-css');
+            $this->load->view('partials/customizer');
             $this->load->view('user/profile_settings');
             $this->load->view('partials/users/topbar');
             $this->load->view('partials/users/sidebar');
@@ -95,6 +100,7 @@ class Users extends CI_Controller
             $this->load->view('partials/users/main');
             $this->load->view('partials/title-meta');
             $this->load->view('partials/head-css');
+            $this->load->view('partials/customizer');
             $this->load->view('user/blogs');
             $this->load->view('partials/users/topbar');
             $this->load->view('partials/users/sidebar');
@@ -139,6 +145,33 @@ class Users extends CI_Controller
 
             redirect('users/profile_settings');
         }
+    }
+
+    public function update()
+    {
+        $user = array(
+            'language'  => $this->input->post('language'),
+            'phone' => $this->input->post('phone'),
+            'email_address' => $this->input->post('email_address'),
+            'city' => $this->input->post('city'),
+            'country' => $this->input->post('country'),
+            'zipcode' => $this->input->post('zipcode'),
+            'description' => $this->input->post('description')
+        );
+
+        $this->load->model('user');
+        $this->user->update_info($this->session->userdata('user_id'), $user);
+
+        $existing_userdata = $this->session->userdata();
+        $existing_userdata['phone'] = $user['phone'];
+        $existing_userdata['city'] = $user['city'];
+        $existing_userdata['country'] = $user['country'];
+        $existing_userdata['zipcode'] = $user['zipcode'];
+        $existing_userdata['description'] = $user['description'];
+
+        $this->session->set_userdata($existing_userdata);
+
+        redirect('users/profile_settings');
     }
 
 }

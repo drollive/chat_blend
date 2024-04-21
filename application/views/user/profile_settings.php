@@ -34,20 +34,10 @@
                                             </div>
                                         </div>
                                         <h5 class="mb-1"><?= $this->session->userdata('first_name') . " " . $this->session->userdata('last_name') ?></h5>
-                                        <p class="text-muted mb-0">Filipino</p>
+                                        <p class="text-muted mb-0"><?= $this->session->userdata('language') ?></p>
                                     </div>
                                 </div>
                             </div>
-                            <?php if ($this->session->flashdata('success')) {
-                            ?>
-                                <p id="success-message"> <?= $this->session->flashdata('success') ?></p>
-                            <?php }
-                            ?>
-                            <?php if ($this->session->flashdata('error')) {
-                            ?>
-                                <p id="error-message"> <?= $this->session->flashdata('error') ?></p>
-                            <?php }
-                            ?>
                             <!--end card-->
                         </div>
                         <!--end col-->
@@ -75,18 +65,18 @@
                                 <div class="card-body p-4">
                                     <div class="tab-content">
                                         <div class="tab-pane active" id="personalDetails" role="tabpanel">
-                                            <form action="javascript:void(0);">
+                                            <form action="<?= base_url() ?>update" method="post">
                                                 <div class="row">
                                                     <div class="col-lg-6">
                                                         <div class="mb-3">
                                                             <label for="firstnameInput" class="form-label">Full Name</label>
-                                                            <input type="text" class="form-control" id="firstnameInput" placeholder="Enter your firstname" value="<?= $this->session->userdata('first_name') . " " . $this->session->userdata('last_name') ?>">
+                                                            <input type="text" class="form-control" id="firstnameInput" placeholder="Enter your firstname" value="<?= $this->session->userdata('first_name') . " " . $this->session->userdata('last_name') ?>" disabled>
                                                         </div>
                                                     </div>
                                                     <!--end col-->
                                                     <div class="col-lg-6">
-                                                        <label for="gender" class="form-label">Language <span class="text-danger">*</span></label>
-                                                        <select class="form-select js-example-basic-single" id="gender" name="gender" data-choices data-choices-search-false required>
+                                                        <label for="gender" class="form-label">Language</label>
+                                                        <select class="form-select js-example-basic-single" id="gender" name="gender" data-choices data-choices-search-false>
                                                             <option value="" selected disabled><?= $this->session->userdata('language') ?></option>
                                                             <option value="english">English</option>
                                                             <option value="chinese">Chinese</option>
@@ -101,50 +91,50 @@
                                                     <!--end col-->
                                                     <div class="col-lg-6">
                                                         <div class="mb-3">
-                                                            <label for="phonenumberInput" class="form-label">Phone Number</label>
-                                                            <input type="text" class="form-control" id="phonenumberInput" placeholder="Enter your phone number" value="+(1) 987 6543">
+                                                            <label for="phone" class="form-label">Phone Number</label>
+                                                            <input type="text" class="form-control" id="phone" name="phone" placeholder="Enter your phone number" value="<?= $this->session->userdata('phone') ?>">
                                                         </div>
                                                     </div>
                                                     <!--end col-->
                                                     <div class="col-lg-6">
                                                         <div class="mb-3">
-                                                            <label for="emailInput" class="form-label">Email Address</label>
-                                                            <input type="email" class="form-control" id="emailInput" placeholder="Enter your email" value="<?= $this->session->userdata('email_address') ?>">
+                                                            <label for="email" class="form-label">Email Address</label>
+                                                            <input type="email" class="form-control" id="email" name="email" placeholder="Enter your email" value="<?= $this->session->userdata('email_address') ?>">
                                                         </div>
                                                     </div>
                                                     <!--end col-->
                                                     <div class="col-lg-4">
                                                         <div class="mb-3">
-                                                            <label for="cityInput" class="form-label">City</label>
-                                                            <input type="text" class="form-control" id="cityInput" placeholder="City" value="Quezon City" />
+                                                            <label for="city" class="form-label">City</label>
+                                                            <input type="text" class="form-control" id="city" name="city" placeholder="City" value="<?= $this->session->userdata('city') ?>" />
                                                         </div>
                                                     </div>
                                                     <!--end col-->
                                                     <div class="col-lg-4">
                                                         <div class="mb-3">
-                                                            <label for="countryInput" class="form-label">Country</label>
-                                                            <input type="text" class="form-control" id="countryInput" placeholder="Country" value="Philippines" />
+                                                            <label for="country" class="form-label">Country</label>
+                                                            <input type="text" class="form-control" id="country" name="country" placeholder="Country" value="<?= $this->session->userdata('country') ?>" />
                                                         </div>
                                                     </div>
                                                     <!--end col-->
                                                     <div class="col-lg-4">
                                                         <div class="mb-3">
-                                                            <label for="zipcodeInput" class="form-label">Zip Code</label>
-                                                            <input type="text" class="form-control" minlength="4" maxlength="6" id="zipcodeInput" placeholder="Enter zipcode" value="1105">
+                                                            <label for="zipcode" class="form-label">Zip Code</label>
+                                                            <input type="text" class="form-control" minlength="4" maxlength="6" id="zipcode" name="zipcode" placeholder="Enter Zip Code" value="<?= $this->session->userdata('zipcode') ?>">
                                                         </div>
                                                     </div>
                                                     <!--end col-->
                                                     <div class="col-lg-12">
                                                         <div class="mb-3 pb-2">
-                                                            <label for="exampleFormControlTextarea" class="form-label">Description</label>
-                                                            <textarea class="form-control" id="exampleFormControlTextarea" placeholder="Enter your description" rows="3"></textarea>
+                                                            <label for="description" class="form-label">Description</label>
+                                                            <textarea class="form-control" id="description" name="description" placeholder="Tell something about yourself..." rows=" 3"><?= $this->session->userdata('description') ?></textarea>
                                                         </div>
                                                     </div>
                                                     <!--end col-->
                                                     <div class="col-lg-12">
                                                         <div class="hstack gap-2 justify-content-end">
-                                                            <button type="submit" class="btn btn-primary">Updates</button>
-                                                            <button type="button" class="btn btn-soft-success">Cancel</button>
+                                                            <button type="submit" class="btn btn-primary">Update</button>
+                                                            <a href="<?= base_url() ?>profile_settings"><button type="button" class="btn btn-soft-success">Cancel</button></a>
                                                         </div>
                                                     </div>
                                                     <!--end col-->

@@ -54,7 +54,7 @@
                                                 </h2>
                                                 <div id="genques-collapseOne" class="accordion-collapse collapse" aria-labelledby="genques-headingOne" data-bs-parent="#genques-accordion">
                                                     <div class="accordion-body">
-                                                        If several languages coalesce, the grammar of the resulting language is more simple and regular than that of the individual languages. The new common language will be more simple and regular than the existing European languages. It will be as simple their most common words.
+                                                        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Tempora debitis magni beatae illo natus, dolorem quas. Reprehenderit praesentium, blanditiis minima quisquam qui sapiente id commodi quo corrupti, quod, maxime nam!
                                                     </div>
                                                 </div>
                                             </div>
@@ -66,7 +66,7 @@
                                                 </h2>
                                                 <div id="genques-collapseTwo" class="accordion-collapse collapse" aria-labelledby="genques-headingTwo" data-bs-parent="#genques-accordion">
                                                     <div class="accordion-body">
-                                                        The new common language will be more simple and regular than the existing European languages. It will be as simple as Occidental; in fact, it will be Occidental. To an English person, it will seem like simplified English, as a skeptical Cambridge friend of mine told me what Occidental is.
+                                                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Provident ducimus corrupti a, esse doloribus ipsa quibusdam aperiam, consequuntur voluptates dignissimos officiis earum dolores, blanditiis magni tenetur. Excepturi sed necessitatibus dolor!
                                                     </div>
                                                 </div>
                                             </div>
@@ -78,7 +78,7 @@
                                                 </h2>
                                                 <div id="genques-collapseThree" class="accordion-collapse collapse" aria-labelledby="genques-headingThree" data-bs-parent="#genques-accordion">
                                                     <div class="accordion-body">
-                                                        he wise man therefore always holds in these matters to this principle of selection: he rejects pleasures to secure other greater pleasures, or else he endures pains to avoid worse pains.But I must explain to you how all this mistaken idea of denouncing pleasure and praising pain was born and I will give you a complete.
+                                                        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Amet adipisci consectetur est, id perspiciatis, necessitatibus magni earum sunt quaerat aut repellendus corrupti dicta voluptatem voluptatum veniam odit odio. Dolores, deleniti!
                                                     </div>
                                                 </div>
                                             </div>
@@ -90,7 +90,7 @@
                                                 </h2>
                                                 <div id="genques-collapseFour" class="accordion-collapse collapse" aria-labelledby="genques-headingFour" data-bs-parent="#genques-accordion">
                                                     <div class="accordion-body">
-                                                        Cras ultricies mi eu turpis hendrerit fringilla. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; In ac dui quis mi consectetuer lacinia. Nam pretium turpis et arcu arcu tortor, suscipit eget, imperdiet nec, imperdiet iaculis aliquam ultrices mauris.
+                                                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero expedita, consequuntur sint vel, sed nostrum voluptas aliquam rem officiis est temporibus natus sunt. Quod sequi porro vero voluptatibus sunt. Ducimus?
                                                     </div>
                                                 </div>
                                             </div>
@@ -119,7 +119,7 @@
                                                 </h2>
                                                 <div id="manageaccount-collapseOne" class="accordion-collapse collapse" aria-labelledby="manageaccount-headingOne" data-bs-parent="#manageaccount-accordion">
                                                     <div class="accordion-body">
-                                                        If several languages coalesce, the grammar of the resulting language is more simple and regular than that of the individual languages. The new common language will be more simple and regular than the existing European languages. It will be as simple their most common words.
+                                                        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Labore, saepe voluptatem officiis impedit commodi dolor praesentium ad quas necessitatibus sint accusamus ratione laboriosam vel cupiditate provident aperiam odio nostrum? Tempore?
                                                     </div>
                                                 </div>
                                             </div>
@@ -150,7 +150,7 @@
                                             <div class="accordion-item">
                                                 <h2 class="accordion-header" id="manageaccount-headingFour">
                                                     <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#manageaccount-collapseFour" aria-expanded="false" aria-controls="manageaccount-collapseFour">
-                                                        What is Lorem Ipsum ?
+                                                        How can I enable/disable two  factor authentication (2FA)?
                                                     </button>
                                                 </h2>
                                                 <div id="manageaccount-collapseFour" class="accordion-collapse collapse" aria-labelledby="manageaccount-headingFour" data-bs-parent="#manageaccount-accordion">

@@ -48,4 +48,31 @@ class User extends CI_Model
         return $this->db->query($query, $values) ? true : false;
     }
 
+    public function update_info($user_id, $user)  // Added $user_id parameter
+    {
+        $query = "UPDATE users SET ";
+        $values = array();
+        $setStatements = array(); // Array to store SET column = ? parts
+
+        // Build the query dynamically based on provided data
+        foreach ($user as $column => $value) {
+            if ($value !== null && $value !== '') { // Check if value is provided
+                $setStatements[] = $column . " = ?";
+                $values[] = $value;
+            }
+        }
+
+        // If we have columns to update...
+        if (count($setStatements) > 0) {
+            $query .= implode(', ', $setStatements); // Combine the 'col = ?' parts
+            $query .= " WHERE id = ?";
+            $values[] = $user_id;
+
+            // Sanitize user data - replace with your framework's sanitization methods
+            // $values = $this->sanitize_data($values);  
+
+            // Execute the query (this would ideally be done through a database model)
+            $this->db->query($query, $values);
+        }
+    }
 }

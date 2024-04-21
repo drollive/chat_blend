@@ -72,6 +72,11 @@ class Auths extends CI_Controller
                 'last_name' => $result ['last_name'],
                 'language' => $result['language'],
                 'profile_picture' => $result['profile_picture'],
+                'phone' => $result['phone'],
+                'city' => $result['city'],
+                'country' => $result['country'],
+                'zipcode' => $result['zipcode'],
+                'description' => $result['description'],
                 'logged_in' => TRUE
             );
             $this->session->set_userdata($userdata);

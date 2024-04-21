@@ -15,14 +15,14 @@
                                             <div class="text-center">
                                                 <ul class="list-inline categories-filter animation-nav" id="filter">
                                                     <li class="list-inline-item"><a class="categories active" data-filter="*">All</a></li>
-                                                    <li class="list-inline-item"><a class="categories" data-filter=".project">People</a></li>
-                                                    <li class="list-inline-item"><a class="categories" data-filter=".designing">Places</a></li>
-                                                    <li class="list-inline-item"><a class="categories" data-filter=".development">Events</a></li>
+                                                    <li class="list-inline-item"><a class="categories" data-filter=".people">People</a></li>
+                                                    <li class="list-inline-item"><a class="categories" data-filter=".places">Places</a></li>
+                                                    <li class="list-inline-item"><a class="categories" data-filter=".photography">Photography</a></li>
                                                 </ul>
                                             </div>
 
                                             <div class="row gallery-wrapper">
-                                                <div class="element-item col-xxl-3 col-xl-4 col-sm-6 project designing development" data-category="designing development">
+                                                <div class="element-item col-xxl-3 col-xl-4 col-sm-6 project places photography" data-category="places photography">
                                                     <div class="gallery-box card">
                                                         <div class="gallery-container">
                                                             <a class="image-popup" href="<?php echo base_url('public/assets') ?>/images/small/img-1.jpg" title="">
@@ -35,7 +35,7 @@
 
                                                         <div class="box-content">
                                                             <div class="d-flex align-items-center mt-1">
-                                                                <div class="flex-grow-1 text-muted">by <a href="" class="text-body text-truncate">Ron Mackie</a></div>
+                                                                <div class="flex-grow-1 text-muted">by <a href="" class="text-body text-truncate">Nico Gabriel Navidad</a></div>
                                                                 <div class="flex-shrink-0">
                                                                     <div class="d-flex gap-3">
                                                                         <button type="button" class="btn btn-sm fs-13 btn-link text-body text-decoration-none px-0">
@@ -51,7 +51,7 @@
                                                     </div>
                                                 </div>
                                                 <!-- end col -->
-                                                <div class="element-item col-xxl-3 col-xl-4 col-sm-6 photography" data-category="photography">
+                                                <div class="element-item col-xxl-3 col-xl-4 col-sm-6 photography people" data-category="photography people">
                                                     <div class="gallery-box card">
                                                         <div class="gallery-container">
                                                             <a class="image-popup" href="<?php echo base_url('public/assets') ?>/images/small/img-2.jpg" title="">
@@ -65,7 +65,7 @@
 
                                                         <div class="box-content">
                                                             <div class="d-flex align-items-center mt-1">
-                                                                <div class="flex-grow-1 text-muted">by <a href="" class="text-body text-truncate">Nancy Martino</a></div>
+                                                                <div class="flex-grow-1 text-muted">by <a href="" class="text-body text-truncate">Mon Carlo Mangente</a></div>
                                                                 <div class="flex-shrink-0">
                                                                     <div class="d-flex gap-3">
                                                                         <button type="button" class="btn btn-sm fs-13 btn-link text-body text-decoration-none px-0">
@@ -81,7 +81,7 @@
                                                     </div>
                                                 </div>
                                                 <!-- end col -->
-                                                <div class="element-item col-xxl-3 col-xl-4 col-sm-6 project development" data-category="development">
+                                                <div class="element-item col-xxl-3 col-xl-4 col-sm-6 places" data-category="places">
                                                     <div class="gallery-box card">
                                                         <div class="gallery-container">
                                                             <a class="image-popup" href="<?php echo base_url('public/assets') ?>/images/small/img-3.jpg" title="">
@@ -94,7 +94,7 @@
 
                                                         <div class="box-content">
                                                             <div class="d-flex align-items-center mt-1">
-                                                                <div class="flex-grow-1 text-muted">by <a href="" class="text-body text-truncate">Elwood Arter</a></div>
+                                                                <div class="flex-grow-1 text-muted">by <a href="" class="text-body text-truncate">Jayson Carlos</a></div>
                                                                 <div class="flex-shrink-0">
                                                                     <div class="d-flex gap-3">
                                                                         <button type="button" class="btn btn-sm fs-13 btn-link text-body text-decoration-none px-0">
@@ -110,7 +110,7 @@
                                                     </div>
                                                 </div>
                                                 <!-- end col -->
-                                                <div class="element-item col-xxl-3 col-xl-4 col-sm-6 project designing" data-category="project designing">
+                                                <div class="element-item col-xxl-3 col-xl-4 col-sm-6 photography " data-category="photography">
                                                     <div class="gallery-box card">
                                                         <div class="gallery-container">
                                                             <a class="image-popup" href="<?php echo base_url('public/assets') ?>/images/small/img-4.jpg" title="">
@@ -124,7 +124,7 @@
 
                                                         <div class="box-content">
                                                             <div class="d-flex align-items-center mt-1">
-                                                                <div class="flex-grow-1 text-muted">by <a href="" class="text-body text-truncate">Jason McQuaid</a></div>
+                                                                <div class="flex-grow-1 text-muted">by <a href="" class="text-body text-truncate">Josiah Ariston</a></div>
                                                                 <div class="flex-shrink-0">
                                                                     <div class="d-flex gap-3">
                                                                         <button type="button" class="btn btn-sm fs-13 btn-link text-body text-decoration-none px-0">
@@ -140,7 +140,7 @@
                                                     </div>
                                                 </div>
                                                 <!-- end col -->
-                                                <div class="element-item col-xxl-3 col-xl-4 col-sm-6 project designing" data-category="project designing">
+                                                <div class="element-item col-xxl-3 col-xl-4 col-sm-6 photography" data-category="photography">
                                                     <div class="gallery-box card">
                                                         <div class="gallery-container">
                                                             <a class="image-popup" href="<?php echo base_url('public/assets') ?>/images/small/img-5.jpgg" title="">
@@ -152,7 +152,7 @@
                                                         </div>
                                                         <div class="box-content">
                                                             <div class="d-flex align-items-center mt-1">
-                                                                <div class="flex-grow-1 text-muted">by <a href="" class="text-body text-truncate">Henry Baird</a></div>
+                                                                <div class="flex-grow-1 text-muted">by <a href="" class="text-body text-truncate">Roy Isidro</a></div>
                                                                 <div class="flex-shrink-0">
                                                                     <div class="d-flex gap-3">
                                                                         <button type="button" class="btn btn-sm fs-13 btn-link text-body text-decoration-none px-0">
@@ -181,7 +181,7 @@
 
                                                         <div class="box-content">
                                                             <div class="d-flex align-items-center mt-1">
-                                                                <div class="flex-grow-1 text-muted">by <a href="" class="text-body text-truncate">Erica Kernan</a></div>
+                                                                <div class="flex-grow-1 text-muted">by <a href="" class="text-body text-truncate">Terenz Dela Cruz</a></div>
                                                                 <div class="flex-shrink-0">
                                                                     <div class="d-flex gap-3">
                                                                         <button type="button" class="btn btn-sm fs-13 btn-link text-body text-decoration-none px-0">
@@ -197,7 +197,7 @@
                                                     </div>
                                                 </div>
                                                 <!-- end col -->
-                                                <div class="element-item col-xxl-3 col-xl-4 col-sm-6 project designing development" data-category="designing development">
+                                                <div class="element-item col-xxl-3 col-xl-4 col-sm-6 places" data-category="places">
                                                     <div class="gallery-box card">
                                                         <div class="gallery-container">
                                                             <a class="image-popup" href="<?php echo base_url('public/assets') ?>/images/small/img-7.jpg" title="">
@@ -210,7 +210,7 @@
 
                                                         <div class="box-content">
                                                             <div class="d-flex align-items-center mt-1">
-                                                                <div class="flex-grow-1 text-muted">by <a href="" class="text-body text-truncate">James Ballard</a></div>
+                                                                <div class="flex-grow-1 text-muted">by <a href="" class="text-body text-truncate">Pam Viloria</a></div>
                                                                 <div class="flex-shrink-0">
                                                                     <div class="d-flex gap-3">
                                                                         <button type="button" class="btn btn-sm fs-13 btn-link text-body text-decoration-none px-0">
@@ -226,7 +226,7 @@
                                                     </div>
                                                 </div>
                                                 <!-- end col -->
-                                                <div class="element-item col-xxl-3 col-xl-4 col-sm-6 photography" data-category="photography">
+                                                <div class="element-item col-xxl-3 col-xl-4 col-sm-6 people" data-category="people">
                                                     <div class="gallery-box card">
                                                         <div class="gallery-container">
                                                             <a class="image-popup" href="<?php echo base_url('public/assets') ?>/images/small/img-8.jpg" title="">
@@ -239,7 +239,7 @@
 
                                                         <div class="box-content">
                                                             <div class="d-flex align-items-center mt-1">
-                                                                <div class="flex-grow-1 text-muted">by <a href="" class="text-body text-truncate">Ruby Griffin</a></div>
+                                                                <div class="flex-grow-1 text-muted">by <a href="" class="text-body text-truncate">Gabriella Neri</a></div>
                                                                 <div class="flex-shrink-0">
                                                                     <div class="d-flex gap-3">
                                                                         <button type="button" class="btn btn-sm fs-13 btn-link text-body text-decoration-none px-0">
@@ -256,7 +256,7 @@
                                                 </div>
                                                 <!-- end col -->
 
-                                                <div class="element-item col-xxl-3 col-xl-4 col-sm-6 project designing development" data-category="designing development">
+                                                <div class="element-item col-xxl-3 col-xl-4 col-sm-6 places" data-category="places">
                                                     <div class="gallery-box card">
                                                         <div class="gallery-container">
                                                             <a class="image-popup" href="<?php echo base_url('public/assets') ?>/images/small/img-9.jpg" title="">
@@ -269,7 +269,7 @@
 
                                                         <div class="box-content">
                                                             <div class="d-flex align-items-center mt-1">
-                                                                <div class="flex-grow-1 text-muted">by <a href="" class="text-body text-truncate">Ron Mackie</a></div>
+                                                                <div class="flex-grow-1 text-muted">by <a href="" class="text-body text-truncate">Elison Duero</a></div>
                                                                 <div class="flex-shrink-0">
                                                                     <div class="d-flex gap-3">
                                                                         <button type="button" class="btn btn-sm fs-13 btn-link text-body text-decoration-none px-0">
@@ -286,7 +286,7 @@
                                                 </div>
                                                 <!-- end col -->
 
-                                                <div class="element-item col-xxl-3 col-xl-4 col-sm-6 project designing" data-category="project designing">
+                                                <div class="element-item col-xxl-3 col-xl-4 col-sm-6 people" data-category="people">
                                                     <div class="gallery-box card">
                                                         <div class="gallery-container">
                                                             <a class="image-popup" href="<?php echo base_url('public/assets') ?>/images/small/img-10.jpg" title="">
@@ -298,7 +298,7 @@
                                                         </div>
                                                         <div class="box-content">
                                                             <div class="d-flex align-items-center mt-1">
-                                                                <div class="flex-grow-1 text-muted">by <a href="" class="text-body text-truncate">Henry Baird</a></div>
+                                                                <div class="flex-grow-1 text-muted">by <a href="" class="text-body text-truncate">GA Sususco</a></div>
                                                                 <div class="flex-shrink-0">
                                                                     <div class="d-flex gap-3">
                                                                         <button type="button" class="btn btn-sm fs-13 btn-link text-body text-decoration-none px-0">
@@ -315,7 +315,7 @@
                                                 </div>
                                                 <!-- end col -->
 
-                                                <div class="element-item col-xxl-3 col-xl-4 col-sm-6 photography" data-category="photography">
+                                                <div class="element-item col-xxl-3 col-xl-4 col-sm-6 people" data-category="people">
                                                     <div class="gallery-box card">
                                                         <div class="gallery-container">
                                                             <a class="image-popup" href="<?php echo base_url('public/assets') ?>/images/small/img-11.jpg" title="">
@@ -346,7 +346,7 @@
                                                 </div>
                                                 <!-- end col -->
 
-                                                <div class="element-item col-xxl-3 col-xl-4 col-sm-6 photography" data-category="photography">
+                                                <div class="element-item col-xxl-3 col-xl-4 col-sm-6 photography people" data-category=" people photography">
                                                     <div class="gallery-box card">
                                                         <div class="gallery-container">
                                                             <a class="image-popup" href="<?php echo base_url('public/assets') ?>/images/small/img-12.jpg" title="">
@@ -359,7 +359,7 @@
 
                                                         <div class="box-content">
                                                             <div class="d-flex align-items-center mt-1">
-                                                                <div class="flex-grow-1 text-muted">by <a href="" class="text-body text-truncate">Erica Kernan</a></div>
+                                                                <div class="flex-grow-1 text-muted">by <a href="" class="text-body text-truncate">Pearly Bruno</a></div>
                                                                 <div class="flex-shrink-0">
                                                                     <div class="d-flex gap-3">
                                                                         <button type="button" class="btn btn-sm fs-13 btn-link text-body text-decoration-none px-0">

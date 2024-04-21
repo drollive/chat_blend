@@ -22,7 +22,7 @@
                                     <h3 class="text-white mb-1"><?= $this->session->userdata('first_name') . " " . $this->session->userdata('last_name') ?></h3>
                                     <p class="text-white-75"><?= $this->session->userdata('language') ?></p>
                                     <div class="hstack text-white-50 gap-1">
-                                        <div class="me-2"><i class="ri-map-pin-user-line me-1 text-white-75 fs-16 align-middle"></i>Quezon City, Philippines</div>
+                                        <div class="me-2"><i class="ri-map-pin-user-line me-1 text-white-75 fs-16 align-middle"></i><?= $this->session->userdata('city') ?>, <?= $this->session->userdata('country') ?></div>
                                     </div>
                                 </div>
                             </div>
@@ -100,7 +100,7 @@
                                                                     </tr>
                                                                     <tr>
                                                                         <th class="ps-0" scope="row">Mobile :</th>
-                                                                        <td class="text-muted">(+63) 9456857767</td>
+                                                                        <td class="text-muted"><?= $this->session->userdata('phone') ?></td>
                                                                     </tr>
                                                                     <tr>
                                                                         <th class="ps-0" scope="row">E-mail :</th>
@@ -108,7 +108,7 @@
                                                                     </tr>
                                                                     <tr>
                                                                         <th class="ps-0" scope="row">Location :</th>
-                                                                        <td class="text-muted">Quezon City, Philippines
+                                                                        <td class="text-muted"><?= $this->session->userdata('city') ?>, <?= $this->session->userdata('country') ?>
                                                                         </td>
                                                                     </tr>
                                                                     <tr>
@@ -183,7 +183,7 @@
                                                     <div class="card-body">
                                                         <h5 class="card-title mb-3">About</h5>
                                                         <p>Hi I'm <?= $this->session->userdata('first_name') . " " . $this->session->userdata('last_name') ?>!</p>
-                                                        <p>You always want to make sure that your fonts work well together and try to limit the number of fonts you use to three or less. Experiment and play around with the fonts that you already have in the software you’re working with reputable font websites. This may be the most commonly encountered tip I received from the designers I spoke with. They highly encourage that you use different fonts in one design, but do not over-exaggerate and go overboard.</p>
+                                                        <p><?= $this->session->userdata('description') ?></p>
                                                         <!--end row-->
                                                     </div>
                                                     <!--end card-body-->

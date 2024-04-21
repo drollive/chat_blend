@@ -167,7 +167,7 @@
                                 <a class="dropdown-item" href="<?php echo base_url() ?>chats"><i class="mdi mdi-chat-outline text-muted fs-16 align-middle me-1"></i> <span class="align-middle">Chats</span></a>
                                 <a class="dropdown-item" href="<?php echo base_url() ?>faq"><i class="mdi mdi-help-circle-outline text-muted fs-16 align-middle me-1"></i> <span class="align-middle">FAQ</b></span></a>
                                 <div class="dropdown-divider"></div>
-                                <a class="dropdown-item" href="<?php echo base_url() ?>settings"><i class="mdi mdi-cog-outline text-muted fs-16 align-middle me-1"></i> <span class="align-middle">Settings</span></a>
+                                <a class="dropdown-item" href="<?php echo base_url() ?>profile_settings"><i class="mdi mdi-cog-outline text-muted fs-16 align-middle me-1"></i> <span class="align-middle">Settings</span></a>
                                 <a class="dropdown-item" href="<?php echo base_url() ?>users/logoff"><i class="mdi mdi-logout text-muted fs-16 align-middle me-1"></i> <span class="align-middle" data-key="t-logout">Logout</span></a>
                             </div>
                         </div>

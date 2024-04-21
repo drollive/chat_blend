@@ -40,7 +40,7 @@
                                 </div>
                                 <div class="chat-message-list">
                                     <ul class="list-unstyled chat-list chat-user-list" id="userList">
-                                        <!-- <li class="active">
+                                        <li class="active">
                                             <a href="javascript: void(0);">
                                                 <div class="d-flex align-items-center">
                                                     <div class="flex-shrink-0 chat-user-img online align-self-center me-2 ms-0">
@@ -54,8 +54,8 @@
                                                     </div>
                                                 </div>
                                             </a>
-                                        </li> -->
-                                        <!-- <li>
+                                        </li>
+                                        <li>
                                             <a href="javascript: void(0);" class="unread-msg-user">
                                                 <div class="d-flex align-items-center">
                                                     <div class="flex-shrink-0 chat-user-img online align-self-center me-2 ms-0">
@@ -72,8 +72,8 @@
                                                     </div>
                                                 </div>
                                             </a>
-                                        </li> -->
-                                        <!-- <li>
+                                        </li>
+                                        <li>
                                             <a href="javascript: void(0);">
                                                 <div class="d-flex align-items-center">
                                                     <div class="flex-shrink-0 chat-user-img online align-self-center me-2 ms-0">
@@ -138,7 +138,7 @@
                                                     </div>
                                                 </div>
                                             </a>
-                                        </li> -->
+                                        </li>
                                     </ul>
                                 </div>
                                 <!-- End chat-message-list -->
@@ -162,7 +162,7 @@
                                                         <div class="flex-grow-1 overflow-hidden">
                                                             <div class="d-flex align-items-center">
                                                                 <div class="flex-shrink-0 chat-user-img online user-own-img align-self-center me-3 ms-0">
-                                                                    <img src="<?php echo base_url('public/assets') ?>/images/people/<?= $this->session->userdata('first_name')?>.jpg" class="rounded-circle avatar-xs" alt="">
+                                                                    <img src="<?= ($this->session->userdata('profile_picture') != "") ? $this->session->userdata('profile_picture') : base_url('public/assets/images/people/default.png') ?>" class="rounded-circle avatar-xs" alt="">
                                                                     <span class="user-status"></span>
                                                                 </div>
                                                                 <div class="flex-grow-1 overflow-hidden">
